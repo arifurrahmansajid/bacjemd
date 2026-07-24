@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header","theme":"realome","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","className":"mt-0","layout":{"inherit":true}} -->
+<main class="wp-block-group alignfull mt-0"><!-- wp:post-featured-image {"align":"wide","className":"entry-featured-image"} /-->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"64px","bottom":"96px"},"blockGap":{"top":"60px","left":"60px"}}}} -->
+<div class="wp-block-columns alignwide" style="margin-top:64px;margin-bottom:96px"><!-- wp:column {"width":"80%"} -->
+<div class="wp-block-column" style="flex-basis:80%"><!-- wp:group {"align":"wide"} -->
+<div class="wp-block-group alignwide"><!-- wp:realome-theme-extension/acf-field {"prefix":"$","acfField":"price","textColor":"tertiary","fontSize":"medium","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} /-->
+
+<!-- wp:post-title {"textAlign":"left","level":1,"style":{"spacing":{"margin":{"bottom":"16px","top":"2px"}}},"fontSize":"xx-large"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"24px","padding":{"bottom":"5px"}}},"textColor":"muted","className":"mt-0","layout":{"type":"flex"}} -->
+<div class="wp-block-group mt-0 has-muted-color has-text-color" style="padding-bottom:5px"><!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e bed \u003c/span\u003e","suffix":" Beds","acfField":"bedrooms","fontSize":"small"} /-->
+
+<!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e shower \u003c/span\u003e","suffix":" Baths","acfField":"bathrooms","fontSize":"small"} /-->
+
+<!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e square_foot \u003c/span\u003e","suffix":" SQ-FT","acfField":"square_feet","fontSize":"small"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-content {"layout":{"inherit":false}} /-->
+
+<!-- wp:realome-theme-extension/acf-field {"acfField":"video","acfFieldType":"oembed","style":{"spacing":{"margin":{"top":"60px","bottom":"60px"}}}} /-->
+
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:heading {"style":{"spacing":{"margin":{"bottom":"24px"}}},"fontSize":"large"} -->
+<h2 class="has-large-font-size" style="margin-bottom:24px">
+						What this Listing offers
+					</h2>
+<!-- /wp:heading -->
+
+<!-- wp:post-terms {"term":"amenities","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"capitalize"},"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","className":"amenities-list mt-0"} /-->
+
+<!-- wp:heading {"style":{"spacing":{"margin":{"top":"64px","bottom":"24px"}}},"fontSize":"large"} -->
+<h2 class="has-large-font-size" style="margin-top:64px;margin-bottom:24px">
+						Where you’ll be
+					</h2>
+<!-- /wp:heading -->
+
+<!-- wp:realome-theme-extension/acf-field {"acfField":"location","acfFieldType":"gmap","className":"mt-0"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"32px","right":"32px","bottom":"32px","left":"32px"}},"border":{"width":"2px","style":"solid","radius":"8px"}},"borderColor":"foreground","backgroundColor":"white"} -->
+<div class="wp-block-group has-border-color has-foreground-border-color has-white-background-color has-background" style="border-radius:8px;border-style:solid;border-width:2px;padding-top:32px;padding-right:32px;padding-bottom:32px;padding-left:32px"><!-- wp:heading {"level":5,"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<h5 style="margin-bottom:0px">Request Info</h5>
+<!-- /wp:heading -->
+
+<!-- wp:wpforms/form-selector {"formId":"4147","displayTitle":false,"displayDesc":false} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"realome","tagName":"footer"} /-->
