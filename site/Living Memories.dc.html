@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #E9EDF3; font-family: 'Manrope', 'Helvetica Neue', sans-serif; color: #34495E; }
+  a { color: #39B7EC; text-decoration: none; }
+  a:hover { color: #436DA5; }
+  ::selection { background: rgba(57,183,236,.25); }
+</style>
+</helmet>
+
+<section style="padding:40px 48px 96px 48px">
+  <div style="display:flex;align-items:baseline;gap:14px;margin:0 0 32px 4px;flex-wrap:wrap">
+    <div style="background:#16324F;color:#FFFFFF;font-weight:800;font-size:13px;padding:6px 12px;border-radius:8px">FLAGSHIP</div>
+    <div style="font-weight:800;font-size:20px;color:#16324F">Living Memories</div>
+    <div style="font-size:13px;color:#64748B;font-weight:500">/living-memories · direction 1a Archive Classic</div>
+    <a href="Sitemap.dc.html" style="font-size:13px;font-weight:800;color:#436DA5">← all pages</a>
+  </div>
+  <div style="display:flex;gap:40px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">desktop · 1440</div>
+      <div data-screen-label="Living Memories — Desktop" style="width:1440px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+
+            <div style="display:flex;align-items:center;justify-content:space-between;height:78px;padding:0 48px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+              <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;color:inherit">
+                <img src="../assets/logo.jpg" alt="Memory Converter" style="width:46px;height:46px;mix-blend-mode:multiply">
+                <span>
+                  <span style="display:block;font-weight:800;font-size:19px;line-height:1.1"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></span>
+                  <span style="display:block;font-size:10px;font-weight:700;letter-spacing:.14em;color:#8296AB">HOLLYWOOD, FL</span>
+                </span>
+              </a>
+              <div style="display:flex;align-items:center;gap:30px">
+                <a href="Our Services.dc.html" style="font-size:15px;font-weight:600;color:#34495E;">Services</a>
+                <a href="Home.dc.html" style="font-size:15px;font-weight:600;color:#34495E;">How It Works</a>
+                <a href="Home.dc.html" style="font-size:15px;font-weight:600;color:#34495E;">Reviews</a>
+                <a href="Areas Served.dc.html" style="font-size:15px;font-weight:600;color:#34495E;">Areas Served</a>
+                <a href="Reel Revival.dc.html" style="font-size:15px;font-weight:600;color:#34495E;">Reel Revival</a>
+              </div>
+              <div style="display:flex;align-items:center;gap:20px">
+                <a href="tel:754-276-1601" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:#436DA5"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg> 754-276-1601</a>
+                <a href="#" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 24px;border-radius:12px" style-hover="background:#3A5F91">Book a Discovery Call</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;padding:16px 48px;background:#F3F7FC;border-bottom:1px solid #E3EBF4">
+              <a href="Home.dc.html" style="font-size:13.5px;font-weight:600;color:#64748B" style-hover="color:#436DA5">Home</a><span style="color:#B6C4D4;font-size:13px">›</span>
+              <span style="font-size:13.5px;font-weight:700;color:#34495E">Living Memories</span>
+            </div>
+
+            <!-- cinematic hero -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <div style="height:16px;background:#0B1D30"></div>
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(90% 70% at 50% 20%, rgba(57,183,236,.13), rgba(57,183,236,0) 60%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:84px 120px 76px 120px">
+                <div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#39B7EC;margin-bottom:24px">INTRODUCING LIVING MEMORIES</div>
+                <h1 style="margin:0 0 22px 0;font-size:64px;line-height:1.05;font-weight:800;color:#FFFFFF;letter-spacing:-.015em;max-width:940px;text-wrap:balance">Your Legacy Deserves to Be <span style="color:#39B7EC">Preserved</span>.</h1>
+                <p style="margin:0 0 36px 0;font-size:19px;line-height:1.65;color:rgba(255,255,255,.84);max-width:680px;font-weight:500">Give your family the ultimate gift — a documentary of your life, told directly from your heart, and preserved forever.</p>
+                <div style="display:flex;gap:14px;margin-bottom:44px">
+                  <a href="#" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16.5px;padding:17px 34px;border-radius:12px" style-hover="background:#5A82B8">Book a Discovery Call</a>
+                  <a href="#" style="border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:16.5px;padding:17px 34px;border-radius:12px" style-hover="background:rgba(57,183,236,.12)">Watch a Sample</a>
+                </div>
+                <div style="position:relative;width:1060px;height:430px;border-radius:16px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.5)">
+                  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg, rgba(57,183,236,.07) 0px, rgba(57,183,236,.07) 11px, rgba(57,183,236,0) 11px, rgba(57,183,236,0) 22px),#1E3A5C">
+                    <span style="font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.06em;color:rgba(255,255,255,.6)">cinematic still — in-home interview, grandmother telling her story</span>
+                  </div>
+                  <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:78px;height:78px;border-radius:50%;background:rgba(57,183,236,.95);box-shadow:0 18px 50px rgba(0,0,0,.5)">
+                    <div style="width:0;height:0;border-left:24px solid #16324F;border-top:15px solid rgba(0,0,0,0);border-bottom:15px solid rgba(0,0,0,0);margin-left:6px"></div>
+                  </div>
+                  <div style="position:absolute;left:0;right:0;top:0;height:34px;background:linear-gradient(rgba(11,29,48,.9), rgba(11,29,48,0))"></div>
+                  <div style="position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(rgba(11,29,48,0), rgba(11,29,48,.9))"></div>
+                </div>
+                <div style="display:flex;gap:10px;margin-top:30px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.66)">
+                  <span>Family-owned since 2020</span><span style="color:#39B7EC">·</span>
+                  <span>5-star on Google &amp; Yelp</span><span style="color:#39B7EC">·</span>
+                  <span>Filmed in-home across South Florida</span>
+                </div>
+              </div>
+              <div style="height:16px;background:#0B1D30"></div>
+            </div>
+
+            <!-- what is -->
+            <div style="background:#F3F7FC;padding:104px 120px">
+              <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center">
+                <div>
+                  <h2 style="margin:0 0 20px 0;font-size:42px;line-height:1.1;font-weight:800;color:#16324F;letter-spacing:-.01em">A Living, Breathing <span style="color:#39B7EC">Family History</span>.</h2>
+                  <p style="margin:0 0 20px 0;font-size:17px;line-height:1.7;color:#4A5D73;font-weight:500">A premium, in-home documentary service that captures your life stories on camera. Your unscripted spoken memories are seamlessly woven together with your digitized photos, home movies, and slides — creating a family history treasured for generations.</p>
+                  <p style="margin:0;font-size:17px;line-height:1.7;color:#16324F;font-weight:700">Time is unkind to physical media. But one day, your grandchildren — and great-grandchildren not yet born — will press play, see your face, and hear your laugh.</p>
+                </div>
+                <div style="position:relative;height:420px">
+                  <div style="position:absolute;top:0;right:0;width:82%;height:78%;"><div style="display:flex;align-items:center;justify-content:center;height:100%;border-radius:16px;box-shadow:0 24px 50px rgba(22,50,79,.15);border:8px solid #FFFFFF;background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — family watching finished film together</span></div></div>
+                  <div style="position:absolute;bottom:0;left:0;width:52%;height:52%;"><div style="display:flex;align-items:center;justify-content:center;height:100%;border-radius:10px;box-shadow:0 24px 50px rgba(22,50,79,.2);border:8px solid #FFFFFF;transform:rotate(-2.5deg);background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — 1960s print</span></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- one of a kind -->
+            <div style="background:#FFFFFF;padding:96px 120px">
+              <div style="text-align:center;max-width:680px;margin:0 auto 52px auto">
+                <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">Nothing Else <span style="color:#39B7EC">Like It</span>.</h2>
+                <p style="margin:0;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500">No studio in the country combines documentary filmmaking with in-house digitization.</p>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:18px;padding:34px 30px;text-align:center">
+                  <div style="display:flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;border:1.5px solid #39B7EC;margin:0 auto 20px auto"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:10px">Documentary + digitization in one</div>
+                  <div style="font-size:14.5px;line-height:1.65;color:#4A5D73;font-weight:500">No other studio combines professional storytelling with archival conversion of your actual media.</div>
+                </div>
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:18px;padding:34px 30px;text-align:center">
+                  <div style="display:flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;border:1.5px solid #39B7EC;margin:0 auto 20px auto"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"></path><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="12.5" x2="13" y2="12.5"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:10px">Filmed by real filmmakers</div>
+                  <div style="font-size:14.5px;line-height:1.65;color:#4A5D73;font-weight:500">In partnership with Bahava Media — cinematic interviews, warm and unscripted.</div>
+                </div>
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:18px;padding:34px 30px;text-align:center">
+                  <div style="display:flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;border:1.5px solid #39B7EC;margin:0 auto 20px auto"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0013 0"></path><line x1="12" y1="17.5" x2="12" y2="21"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:10px">Your artifacts never leave our hands</div>
+                  <div style="font-size:14.5px;line-height:1.65;color:#4A5D73;font-weight:500">Every photo, slide, and tape is digitized in-house in Hollywood, FL. Never shipped, never outsourced.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- process (navy band, circular icons) -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(100% 100% at 50% 0%, rgba(57,183,236,.09), rgba(57,183,236,0) 60%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;padding:96px 120px">
+                <div style="text-align:center;margin-bottom:64px">
+                  <h2 style="margin:0;font-size:42px;font-weight:800;color:#FFFFFF;letter-spacing:-.01em">How Your Story Comes to <span style="color:#39B7EC">Life</span>.</h2>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px">
+                  <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;width:76px;height:76px;border-radius:50%;border:1.5px solid #39B7EC;margin-bottom:22px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"></path></svg></div>
+  <div style="font-size:19px;font-weight:800;color:#FFFFFF;margin-bottom:10px">The Kickoff</div>
+  <div style="font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.72);font-weight:500;max-width:270px">A 30-minute introductory call to learn your history and tailor your interview questions.</div>
+</div>
+                  <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;width:76px;height:76px;border-radius:50%;border:1.5px solid #39B7EC;margin-bottom:22px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"></path><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="12.5" x2="13" y2="12.5"></line></svg></div>
+  <div style="font-size:19px;font-weight:800;color:#FFFFFF;margin-bottom:10px">The Interview</div>
+  <div style="font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.72);font-weight:500;max-width:270px">A relaxed, on-camera conversation filmed in the comfort of your own home.</div>
+</div>
+                  <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;width:76px;height:76px;border-radius:50%;border:1.5px solid #39B7EC;margin-bottom:22px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0013 0"></path><line x1="12" y1="17.5" x2="12" y2="21"></line></svg></div>
+  <div style="font-size:19px;font-weight:800;color:#FFFFFF;margin-bottom:10px">The Conversion</div>
+  <div style="font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.72);font-weight:500;max-width:270px">We safely collect and digitize your photos, slides, and tapes in-house so they never fade. Your artifacts never leave our hands.</div>
+</div>
+                  <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;width:76px;height:76px;border-radius:50%;border:1.5px solid #39B7EC;margin-bottom:22px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+  <div style="font-size:19px;font-weight:800;color:#FFFFFF;margin-bottom:10px">The Edit</div>
+  <div style="font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.72);font-weight:500;max-width:270px">Your digitized memories are placed perfectly over your interview footage, bringing your stories to life as you tell them.</div>
+</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sample -->
+            <div style="background:#FFFFFF;padding:104px 120px">
+              <div style="text-align:center;margin-bottom:48px">
+                <h2 style="margin:0 0 14px 0;font-size:42px;font-weight:800;color:#16324F;letter-spacing:-.01em">See a <span style="color:#39B7EC">Sample</span>.</h2>
+                <p style="margin:0 auto;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500;max-width:560px">Unscripted, unhurried, and true to the person on camera. This is what authentic storytelling looks like.</p>
+              </div>
+              <div style="position:relative;max-width:1000px;margin:0 auto;border-radius:18px;overflow:hidden;box-shadow:0 36px 80px rgba(22,50,79,.25)">
+                <div style="height:22px;background:#0B1D30"></div>
+                <div style="position:relative;height:440px;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg, rgba(57,183,236,.07) 0px, rgba(57,183,236,.07) 11px, rgba(57,183,236,0) 11px, rgba(57,183,236,0) 22px),#1E3A5C">
+                  <span style="font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.06em;color:rgba(255,255,255,.6)">sample film — 90-second excerpt</span>
+                  <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:74px;height:74px;border-radius:50%;background:rgba(57,183,236,.95)">
+                    <div style="width:0;height:0;border-left:22px solid #16324F;border-top:14px solid rgba(0,0,0,0);border-bottom:14px solid rgba(0,0,0,0);margin-left:6px"></div>
+                  </div>
+                </div>
+                <div style="height:22px;background:#0B1D30"></div>
+              </div>
+            </div>
+
+            <!-- pricing tiers -->
+            <div style="background:#F3F7FC;padding:104px 120px">
+              <div style="text-align:center;margin-bottom:56px">
+                <h2 style="margin:0 0 14px 0;font-size:42px;font-weight:800;color:#16324F;letter-spacing:-.01em">Tell Your Story, <span style="color:#39B7EC">Your Way</span>.</h2>
+                <p style="margin:0 auto;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500;max-width:520px">Three collections. One promise: your story, preserved forever.</p>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch">
+                <div style="display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:20px;padding:38px 32px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+                  <div style="font-size:13px;font-weight:800;letter-spacing:.16em;color:#436DA5;margin-bottom:10px">HERITAGE</div>
+                  <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:26px"><span style="font-size:44px;font-weight:800;color:#16324F;letter-spacing:-.02em">$1,800</span></div>
+                  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:30px">
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">1-Hour Interview (1 Subject)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">1 Photo Album (or 250 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">3 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">Printed Transcript</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;border:1.5px solid #436DA5;color:#436DA5;font-weight:700;font-size:15.5px;padding:15px 0;border-radius:12px;margin-top:auto" style-hover="background:rgba(67,109,165,.08)">Start with Heritage</a>
+                </div>
+                <div style="display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:20px;padding:38px 32px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+                  <div style="font-size:13px;font-weight:800;letter-spacing:.16em;color:#436DA5;margin-bottom:10px">TESTAMENT</div>
+                  <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:26px"><span style="font-size:44px;font-weight:800;color:#16324F;letter-spacing:-.02em">$3,600</span></div>
+                  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:30px">
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">2-Hour Interview (up to 2 Subjects)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">5 Photo Albums (or 1,000 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">10 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">Printed Transcript</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#34495E;line-height:1.5">All Raw Interview Footage</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;border:1.5px solid #436DA5;color:#436DA5;font-weight:700;font-size:15.5px;padding:15px 0;border-radius:12px;margin-top:auto" style-hover="background:rgba(67,109,165,.08)">Choose Testament</a>
+                </div>
+                <div style="position:relative;display:flex;flex-direction:column;background:#16324F;border:2px solid #39B7EC;border-radius:20px;padding:38px 32px;box-shadow:0 24px 60px rgba(22,50,79,.3)">
+                  <div style="position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:#39B7EC;color:#16324F;font-size:11.5px;font-weight:800;letter-spacing:.1em;padding:7px 16px;border-radius:99px;white-space:nowrap">MOST COMPLETE</div>
+                  <div style="font-size:13px;font-weight:800;letter-spacing:.16em;color:#39B7EC;margin-bottom:10px">LEGACY</div>
+                  <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:26px"><span style="font-size:44px;font-weight:800;color:#FFFFFF;letter-spacing:-.02em">$5,400</span></div>
+                  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:30px">
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.5">3-Hour Interview (2+ Subjects)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.5">10 Photo Albums (or 2,000 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.5">20 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.5">Printed Transcript &amp; Raw Footage</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.5">Personalized Hardcover Video Book</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;background:#39B7EC;color:#16324F;font-weight:800;font-size:15.5px;padding:15px 0;border-radius:12px;margin-top:auto" style-hover="background:#5FC6F0">Choose Legacy</a>
+                </div>
+              </div>
+              <div style="text-align:center;margin-top:28px;font-size:14.5px;font-weight:600;color:#64748B">Custom collections welcome — we’ll tailor a package to your family.</div>
+            </div>
+
+            <!-- what you receive -->
+            <div style="background:#FFFFFF;padding:104px 120px">
+              <div style="max-width:640px;margin-bottom:52px">
+                <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">What You <span style="color:#39B7EC">Receive</span>.</h2>
+                <p style="margin:0;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500">Every collection arrives as a keepsake, not a file dump.</p>
+              </div>
+              <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center">
+                <div style="display:flex;flex-direction:column;gap:26px">
+                  <div style="display:flex;gap:18px;align-items:flex-start;">
+                    <div style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="12.5" rx="2"></rect><line x1="9" y1="20.5" x2="15" y2="20.5"></line><line x1="12" y1="17" x2="12" y2="20.5"></line></svg></div>
+                    <div><div style="font-size:17.5px;font-weight:800;color:#16324F;margin-bottom:5px">The Final Film</div><div style="font-size:14.5px;line-height:1.6;color:#4A5D73;font-weight:500">A cinematic viewing gallery with interactive menu — plus a beautifully packaged USB drive.</div></div>
+                  </div>
+                  <div style="display:flex;gap:18px;align-items:flex-start;">
+                    <div style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8.5" width="18" height="11" rx="2"></rect><rect x="2" y="4.5" width="20" height="4" rx="1.2"></rect><line x1="9.5" y1="13" x2="14.5" y2="13"></line></svg></div>
+                    <div><div style="font-size:17.5px;font-weight:800;color:#16324F;margin-bottom:5px">The Complete Archive</div><div style="font-size:14.5px;line-height:1.6;color:#4A5D73;font-weight:500">Cleanly labeled, cloud-based folders of every digitized photo, slide, and tape.</div></div>
+                  </div>
+                  <div style="display:flex;gap:18px;align-items:flex-start;">
+                    <div style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8l4 4V21.5H6z"></path><path d="M14 2.5v4h4"></path><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="15" y2="16"></line></svg></div>
+                    <div><div style="font-size:17.5px;font-weight:800;color:#16324F;margin-bottom:5px">The Transcript</div><div style="font-size:14.5px;line-height:1.6;color:#4A5D73;font-weight:500">Your full interview, professionally transcribed and printed.</div></div>
+                  </div>
+                  <div style="display:flex;gap:18px;align-items:flex-start;background:#F3F7FC;border:1px solid #E3EBF4;border-radius:16px;padding:22px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h6.5a2.5 2.5 0 012.5 2.5v13a2 2 0 00-2-2H4z"></path><path d="M20 4.5h-6.5A2.5 2.5 0 0011 7v13a2 2 0 012-2h7z" transform="translate(1 0)"></path></svg></div>
+                    <div><div style="font-size:17.5px;font-weight:800;color:#16324F;margin-bottom:5px">Legacy Exclusive — The Hardcover Video Book</div><div style="font-size:14.5px;line-height:1.6;color:#4A5D73;font-weight:500">A custom-bound hardcover that automatically plays your documentary when opened.</div></div>
+                  </div>
+                </div>
+                <div style="position:relative">
+                  <div style="display:flex;align-items:center;justify-content:center;height:420px;border-radius:18px;box-shadow:0 36px 80px rgba(22,50,79,.35);background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:rgba(255,255,255,.6)">product shot — hardcover video book, open, screen playing film</span></div>
+                  <div style="position:absolute;left:-24px;bottom:-20px;background:#39B7EC;color:#16324F;border-radius:14px;padding:13px 20px;box-shadow:0 16px 40px rgba(0,0,0,.25)">
+                    <div style="font-weight:800;font-size:13.5px">Legacy exclusive</div>
+                    <div style="font-size:12px;font-weight:700;opacity:.8">Plays the moment it opens</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- who it's for -->
+            <div style="background:#F3F7FC;padding:96px 120px">
+              <div style="max-width:640px;margin-bottom:52px">
+                <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">Made for the <span style="color:#39B7EC">Storytellers</span>.</h2>
+                <p style="margin:0;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500">And for the families who can’t bear to lose the stories.</p>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;overflow:hidden">
+                  <div style="display:flex;align-items:center;justify-content:center;height:150px;border-radius:0;background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — grandmother laughing</span></div>
+                  <div style="padding:20px 22px">
+                    <div style="font-size:16px;font-weight:800;color:#16324F;margin-bottom:6px">Grandparents &amp; elders</div>
+                    <div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">The voice everyone gathers around at dinner — preserved.</div>
+                  </div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;overflow:hidden">
+                  <div style="display:flex;align-items:center;justify-content:center;height:150px;border-radius:0;background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — father &amp; daughter</span></div>
+                  <div style="padding:20px 22px">
+                    <div style="font-size:16px;font-weight:800;color:#16324F;margin-bottom:6px">A parent’s story, in time</div>
+                    <div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">Capture the matriarch’s or patriarch’s story while you still can.</div>
+                  </div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;overflow:hidden">
+                  <div style="display:flex;align-items:center;justify-content:center;height:150px;border-radius:0;background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — birthday toast</span></div>
+                  <div style="padding:20px 22px">
+                    <div style="font-size:16px;font-weight:800;color:#16324F;margin-bottom:6px">Milestone gifts</div>
+                    <div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">Major birthdays, anniversaries, retirements — a gift no one forgets.</div>
+                  </div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;overflow:hidden">
+                  <div style="display:flex;align-items:center;justify-content:center;height:150px;border-radius:0;background:repeating-linear-gradient(45deg, rgba(67,109,165,.10) 0px, rgba(67,109,165,.10) 10px, rgba(67,109,165,0) 10px, rgba(67,109,165,0) 20px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.05em;color:#5B7188">photo — three generations</span></div>
+                  <div style="padding:20px 22px">
+                    <div style="font-size:16px;font-weight:800;color:#16324F;margin-bottom:6px">Faith &amp; cultural communities</div>
+                    <div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">For families who treasure passing history down the generations.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- testimonial -->
+            <div style="background:#FFFFFF;padding:104px 120px">
+              <div style="max-width:860px;margin:0 auto;text-align:center">
+                <div style="color:#39B7EC;font-size:18px;letter-spacing:3px;margin-bottom:26px">★★★★★</div>
+                <p style="margin:0 0 30px 0;font-size:24px;line-height:1.6;color:#16324F;font-weight:600;letter-spacing:-.005em">“After my son passed, I couldn’t bring myself to touch his home videos — but I was terrified of losing them. They treated every tape like it was their own family’s. Fast, fair, and endlessly kind. Now I can hear his voice whenever I need to.”</p>
+                <div style="font-size:15.5px;font-weight:800;color:#16324F">A Hollywood, FL mother</div>
+                <div style="font-size:13.5px;color:#64748B;font-weight:600;margin-top:4px">Shared with permission · 5.0 on Google &amp; Yelp</div>
+              </div>
+            </div>
+
+            <div style="background:#F3F7FC;padding:96px 120px">
+              <div style="display:grid;grid-template-columns:.8fr 1.2fr;gap:72px">
+                <div>
+                  <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">Questions, <span style="color:#39B7EC">Answered</span>.</h2>
+                  <p style="margin:0 0 24px 0;font-size:16px;line-height:1.6;color:#4A5D73;font-weight:500">Every Living Memories project starts with a no-pressure discovery call. Ask us anything.</p>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;color:#436DA5"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg> 754-276-1601</a>
+                </div>
+                <div>
+                  <div style="border-top:1px solid #E3EBF4">
+                    <div style="border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+                        <div style="font-size:17px;font-weight:800;color:#16324F">I’m not comfortable on camera. Will this work for me?</div>
+                        <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">−</div>
+                      </div>
+                      <p style="margin:12px 0 0 0;font-size:15px;line-height:1.65;color:#4A5D73;font-weight:500;max-width:560px">That’s the most common worry — and the first thing that disappears. There’s no script and no studio: just a warm conversation in your own living room with an interviewer who’s done this hundreds of times. Most people forget the camera within ten minutes.</p>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">How long does the whole process take?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">Where is the interview filmed?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">What media can we include?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">Can we interview more than one family member?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">What exactly do we receive at the end?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">What does it cost?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- final CTA -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <div style="height:16px;background:#0B1D30"></div>
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(90% 130% at 50% 0%, rgba(57,183,236,.11), rgba(57,183,236,0) 60%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;text-align:center;padding:96px 120px">
+                <h2 style="margin:0 0 16px 0;font-size:46px;line-height:1.15;font-weight:800;color:#FFFFFF;letter-spacing:-.015em;text-wrap:balance">One Day, Your Grandchildren Will Press <span style="color:#39B7EC">Play</span>.</h2>
+                <p style="margin:0 auto 36px auto;font-size:18px;line-height:1.6;color:rgba(255,255,255,.8);font-weight:500;max-width:480px">Give them your voice.</p>
+                <div style="display:flex;justify-content:center;gap:16px">
+                  <a href="#" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16.5px;padding:17px 34px;border-radius:12px" style-hover="background:#5A82B8">Schedule a No-Pressure Discovery Call</a>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:9px;border:1.5px solid rgba(255,255,255,.25);color:#FFFFFF;font-weight:700;font-size:16.5px;padding:17px 28px;border-radius:12px" style-hover="border-color:#39B7EC;color:#39B7EC"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg> 754-276-1601</a>
+                </div>
+              </div>
+              <div style="height:16px;background:#0B1D30"></div>
+            </div>
+            <div style="position:relative;height:340px;background-image:linear-gradient(rgba(67,109,165,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(67,109,165,.08) 1px, transparent 1px);background-size:44px 44px;background-color:#E8EFF6">
+              <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-60%);display:flex;flex-direction:column;align-items:center;gap:2px">
+                <div style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#39B7EC;box-shadow:0 10px 24px rgba(57,183,236,.45)"><div style="width:10px;height:10px;border-radius:50%;background:#FFFFFF"></div></div>
+                <div style="width:2px;height:12px;background:#39B7EC"></div>
+              </div>
+              <div style="position:absolute;left:120px;top:50%;transform:translateY(-50%);background:#FFFFFF;border:1px solid #E3EBF4;border-radius:14px;padding:22px 26px;box-shadow:0 16px 40px rgba(22,50,79,.14)">
+                <div style="font-size:15px;font-weight:800;color:#16324F;margin-bottom:6px">Memory Converter</div>
+                <div style="font-size:14px;line-height:1.55;color:#4A5D73;font-weight:500">6630 Meade Street<br>Hollywood, FL 33024</div>
+                <a href="#" style="display:inline-block;margin-top:10px;font-size:13.5px;font-weight:800;color:#436DA5">Get directions →</a>
+              </div>
+              <div style="position:absolute;right:16px;bottom:12px;font-family:ui-monospace,monospace;font-size:11px;color:#8296AB;letter-spacing:.05em">google map embed — hollywood / south florida</div>
+            </div>
+            <div style="background:#16324F;padding:64px 120px 28px 120px">
+              <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.12)">
+                <div>
+                  <div style="font-weight:800;font-size:19px;margin-bottom:12px"><span style="color:#FFFFFF">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+                  <p style="margin:0 0 18px 0;font-size:14px;line-height:1.65;color:rgba(255,255,255,.65);font-weight:500;max-width:300px">White-glove memory digitization, handled by hand in Hollywood, FL — never overseas.</p>
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#39B7EC;font-size:13px;letter-spacing:2px">★★★★★</span><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.75)">5.0 on Google</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><span style="color:#39B7EC;font-size:13px;letter-spacing:2px">★★★★★</span><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.75)">5.0 on Yelp</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:11px">
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:4px">SERVICES</div>
+                  <a href="Convert VHS to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">VHS to Digital</a>
+                  <a href="Film to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">8mm & Super 8 Film</a>
+                  <a href="Cassette to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Cassette to CD & Digital</a>
+                  <a href="Photo Scanning and Restoration.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Photo Scanning & Restoration</a>
+                  <a href="DVD to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">DVD to Digital</a>
+                  <a href="Living Memories.dc.html" style="font-size:14px;font-weight:600;color:#39B7EC" style-hover="color:#FFFFFF">Living Memories</a>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:11px">
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:4px">COMPANY</div>
+                  <a href="Home.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">How It Works</a>
+                  <a href="Home.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Reviews</a>
+                  <a href="Areas Served.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Areas Served</a>
+                  <a href="Compare.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Compare Us</a>
+                  <a href="Guides.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Guides</a>
+                  <a href="Reel Revival.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Reel Revival Blog</a>
+                </div>
+                <div>
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:15px">VISIT THE STUDIO</div>
+                  <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.78);font-weight:500;margin-bottom:14px">6630 Meade Street<br>Hollywood, FL 33024</div>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:#39B7EC;margin-bottom:16px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg> 754-276-1601</a>
+                  <div style="display:flex;gap:14px;margin-top:4px">
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Facebook</a>
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Yelp</a>
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Instagram</a>
+                  </div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding-top:24px">
+                <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)">© 2026 Memory Converter · Hollywood, FL</div>
+                <div style="display:flex;gap:18px">
+                  <a href="#" style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)" style-hover="color:#39B7EC">Privacy</a>
+                  <a href="#" style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)" style-hover="color:#39B7EC">Terms</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <sc-if value="{{ showMobile }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">mobile · 390</div>
+      <div data-screen-label="Living Memories — Mobile" style="position:relative;width:390px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+
+            <div style="display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 16px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+              <a href="Home.dc.html" style="display:flex;align-items:center;gap:9px;color:inherit">
+                <img src="../assets/logo.jpg" alt="Memory Converter" style="width:34px;height:34px;mix-blend-mode:multiply">
+                <span style="font-weight:800;font-size:15px"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></span>
+              </a>
+              <div style="display:flex;align-items:center;gap:10px">
+                <a href="tel:754-276-1601" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg></a>
+                <div style="display:flex;flex-direction:column;gap:4.5px;padding:6px 2px">
+                  <div style="width:20px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                  <div style="width:20px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                  <div style="width:14px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;padding:12px 16px;background:#F3F7FC;border-bottom:1px solid #E3EBF4;overflow:hidden;white-space:nowrap">
+              <a href="Home.dc.html" style="font-size:12px;font-weight:600;color:#64748B">Home</a><span style="color:#B6C4D4;font-size:12px">›</span>
+              <span style="font-size:12px;font-weight:700;color:#34495E">Living Memories</span>
+            </div>
+            <div style="position:relative;background:#16324F;overflow:hidden;text-align:center">
+              <div style="height:10px;background:#0B1D30"></div>
+              <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 60% at 50% 12%, rgba(57,183,236,.13), rgba(57,183,236,0) 60%)"></div>
+              <div style="position:relative;padding:44px 20px 48px 20px">
+                <div style="font-size:10.5px;font-weight:800;letter-spacing:.18em;color:#39B7EC;margin-bottom:16px">INTRODUCING LIVING MEMORIES</div>
+                <h1 style="margin:0 0 16px 0;font-size:34px;line-height:1.1;font-weight:800;color:#FFFFFF;letter-spacing:-.01em;text-wrap:balance">Your Legacy Deserves to Be <span style="color:#39B7EC">Preserved</span>.</h1>
+                <p style="margin:0 0 24px 0;font-size:15px;line-height:1.65;color:rgba(255,255,255,.84);font-weight:500">A documentary of your life, told directly from your heart — preserved forever.</p>
+                <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
+                  <a href="#" style="display:block;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:15px 0;border-radius:12px">Book a Discovery Call</a>
+                  <a href="#" style="display:block;border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:16px;padding:15px 0;border-radius:12px">Watch a Sample</a>
+                </div>
+                <div style="position:relative;height:210px;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.45)">
+                  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg, rgba(57,183,236,.07) 0px, rgba(57,183,236,.07) 11px, rgba(57,183,236,0) 11px, rgba(57,183,236,0) 22px),#1E3A5C">
+                    <span style="font-family:ui-monospace,monospace;font-size:10.5px;color:rgba(255,255,255,.6)">in-home interview still</span>
+                  </div>
+                  <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:rgba(57,183,236,.95)">
+                    <div style="width:0;height:0;border-left:16px solid #16324F;border-top:10px solid rgba(0,0,0,0);border-bottom:10px solid rgba(0,0,0,0);margin-left:4px"></div>
+                  </div>
+                </div>
+                <div style="margin-top:18px;font-size:12px;font-weight:600;color:rgba(255,255,255,.6)">Since 2020 · 5★ Google &amp; Yelp · Filmed in-home across South Florida</div>
+              </div>
+              <div style="height:10px;background:#0B1D30"></div>
+            </div>
+            <div style="position:absolute;top:706px;left:0;right:0;z-index:6;display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.96);border-top:1px solid #E3EBF4;padding:12px 16px;box-shadow:0 -10px 30px rgba(22,50,79,.14)">
+              <a href="#" style="flex:1;display:block;text-align:center;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15.5px;padding:14px 0;border-radius:12px">Book a Discovery Call</a>
+              <a href="tel:754-276-1601" style="display:flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:12px;border:1.5px solid #39B7EC"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg></a>
+            </div>
+            <div style="background:#F3F7FC;padding:48px 20px">
+              <h2 style="margin:0 0 14px 0;font-size:26px;line-height:1.2;font-weight:800;color:#16324F">A Living, Breathing <span style="color:#39B7EC">Family History</span>.</h2>
+              <p style="margin:0 0 14px 0;font-size:14.5px;line-height:1.7;color:#4A5D73;font-weight:500">Your unscripted spoken memories, woven together with your digitized photos, home movies, and slides — a family history treasured for generations.</p>
+              <p style="margin:0;font-size:14.5px;line-height:1.7;color:#16324F;font-weight:700">One day, your grandchildren will press play, see your face, and hear your laugh.</p>
+            </div>
+            <div style="position:relative;background:#16324F;overflow:hidden;padding:48px 20px">
+              <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 80% at 50% 0%, rgba(57,183,236,.09), rgba(57,183,236,0) 60%)"></div>
+              <div style="position:relative">
+                <h2 style="margin:0 0 28px 0;font-size:25px;font-weight:800;color:#FFFFFF;text-align:center">How Your Story Comes to <span style="color:#39B7EC">Life</span>.</h2>
+                <div style="display:flex;flex-direction:column;gap:24px">
+                  <div style="display:flex;gap:16px;align-items:flex-start">
+                    <div style="display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"></path></svg></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#FFFFFF;margin-bottom:4px">The Kickoff</div><div style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.72);font-weight:500">A 30-minute call to learn your history and tailor your questions.</div></div>
+                  </div>
+                  <div style="display:flex;gap:16px;align-items:flex-start">
+                    <div style="display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"></path><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="12.5" x2="13" y2="12.5"></line></svg></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#FFFFFF;margin-bottom:4px">The Interview</div><div style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.72);font-weight:500">A relaxed, on-camera conversation in your own home.</div></div>
+                  </div>
+                  <div style="display:flex;gap:16px;align-items:flex-start">
+                    <div style="display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0013 0"></path><line x1="12" y1="17.5" x2="12" y2="21"></line></svg></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#FFFFFF;margin-bottom:4px">The Conversion</div><div style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.72);font-weight:500">Photos, slides &amp; tapes digitized in-house — they never leave our hands.</div></div>
+                  </div>
+                  <div style="display:flex;gap:16px;align-items:flex-start">
+                    <div style="display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+                    <div><div style="font-size:16px;font-weight:800;color:#FFFFFF;margin-bottom:4px">The Edit</div><div style="font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.72);font-weight:500">Your memories placed perfectly over your interview footage.</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#FFFFFF;padding:48px 16px">
+              <h2 style="margin:0 0 6px 0;font-size:26px;font-weight:800;color:#16324F;text-align:center">Tell Your Story, <span style="color:#39B7EC">Your Way</span>.</h2>
+              <p style="margin:0 0 24px 0;font-size:13.5px;color:#64748B;font-weight:600;text-align:center">Three collections — swipe or stack.</p>
+              <div style="display:flex;flex-direction:column;gap:14px">
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:24px 22px">
+                  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px"><span style="font-size:12px;font-weight:800;letter-spacing:.14em;color:#436DA5">HERITAGE</span><span style="font-size:28px;font-weight:800;color:#16324F">$1,800</span></div>
+                  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:16px">
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">1-Hour Interview (1 Subject)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">1 Photo Album (or 250 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">3 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">Printed Transcript</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;border:1.5px solid #436DA5;color:#436DA5;font-weight:700;font-size:14.5px;padding:13px 0;border-radius:12px">Start with Heritage</a>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:24px 22px">
+                  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px"><span style="font-size:12px;font-weight:800;letter-spacing:.14em;color:#436DA5">TESTAMENT</span><span style="font-size:28px;font-weight:800;color:#16324F">$3,600</span></div>
+                  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:16px">
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">2-Hour Interview (up to 2 Subjects)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">5 Photo Albums (or 1,000 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">10 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">Printed Transcript</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#34495E">All Raw Interview Footage</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;border:1.5px solid #436DA5;color:#436DA5;font-weight:700;font-size:14.5px;padding:13px 0;border-radius:12px">Choose Testament</a>
+                </div>
+                <div style="position:relative;background:#16324F;border:2px solid #39B7EC;border-radius:16px;padding:28px 22px 24px 22px">
+                  <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#39B7EC;color:#16324F;font-size:10px;font-weight:800;letter-spacing:.09em;padding:5px 13px;border-radius:99px;white-space:nowrap">MOST COMPLETE</div>
+                  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px"><span style="font-size:12px;font-weight:800;letter-spacing:.14em;color:#39B7EC">LEGACY</span><span style="font-size:28px;font-weight:800;color:#FFFFFF">$5,400</span></div>
+                  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:16px">
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#FFFFFF">3-Hour Interview (2+ Subjects)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#FFFFFF">10 Photo Albums (or 2,000 Photos)</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#FFFFFF">20 Video Tapes Converted</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#FFFFFF">Printed Transcript &amp; Raw Footage</span></div>
+                    <div style="display:flex;align-items:flex-start;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:#FFFFFF">Personalized Hardcover Video Book</span></div>
+                  </div>
+                  <a href="#" style="display:block;text-align:center;background:#39B7EC;color:#16324F;font-weight:800;font-size:14.5px;padding:13px 0;border-radius:12px">Choose Legacy</a>
+                </div>
+              </div>
+              <div style="text-align:center;margin-top:16px;font-size:13px;font-weight:600;color:#64748B">Custom collections welcome.</div>
+            </div>
+            <div style="background:#F3F7FC;padding:48px 20px">
+              <h2 style="margin:0 0 20px 0;font-size:25px;font-weight:800;color:#16324F">What You <span style="color:#39B7EC">Receive</span>.</h2>
+              <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:20px">
+                <div style="display:flex;gap:14px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="12.5" rx="2"></rect><line x1="9" y1="20.5" x2="15" y2="20.5"></line><line x1="12" y1="17" x2="12" y2="20.5"></line></svg></div>
+                  <div><div style="font-size:15px;font-weight:800;color:#16324F;margin-bottom:3px">The Final Film</div><div style="font-size:13px;line-height:1.55;color:#4A5D73;font-weight:500">Cinematic gallery + packaged USB drive.</div></div>
+                </div>
+                <div style="display:flex;gap:14px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8.5" width="18" height="11" rx="2"></rect><rect x="2" y="4.5" width="20" height="4" rx="1.2"></rect><line x1="9.5" y1="13" x2="14.5" y2="13"></line></svg></div>
+                  <div><div style="font-size:15px;font-weight:800;color:#16324F;margin-bottom:3px">The Complete Archive</div><div style="font-size:13px;line-height:1.55;color:#4A5D73;font-weight:500">Cleanly labeled cloud folders of every piece.</div></div>
+                </div>
+                <div style="display:flex;gap:14px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1.5px solid #39B7EC;flex-shrink:0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8l4 4V21.5H6z"></path><path d="M14 2.5v4h4"></path><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="15" y2="16"></line></svg></div>
+                  <div><div style="font-size:15px;font-weight:800;color:#16324F;margin-bottom:3px">The Transcript</div><div style="font-size:13px;line-height:1.55;color:#4A5D73;font-weight:500">Professionally transcribed and printed.</div></div>
+                </div>
+              </div>
+              <div style="position:relative">
+                <div style="display:flex;align-items:center;justify-content:center;height:200px;border-radius:14px;background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C"><span style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.6)">product shot — hardcover video book</span></div>
+                <div style="position:absolute;left:12px;bottom:-12px;background:#39B7EC;color:#16324F;border-radius:11px;padding:9px 14px">
+                  <div style="font-weight:800;font-size:11.5px">Legacy exclusive — plays when opened</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:#FFFFFF;padding:48px 20px;text-align:center">
+              <div style="color:#39B7EC;font-size:15px;letter-spacing:2.5px;margin-bottom:18px">★★★★★</div>
+              <p style="margin:0 0 18px 0;font-size:16.5px;line-height:1.65;color:#16324F;font-weight:600">“They treated every tape like it was their own family’s. Fast, fair, and endlessly kind. Now I can hear his voice whenever I need to.”</p>
+              <div style="font-size:13.5px;font-weight:800;color:#16324F">A Hollywood, FL mother</div>
+              <div style="font-size:12px;color:#64748B;font-weight:600;margin-top:3px">Shared with permission · 5.0 on Google &amp; Yelp</div>
+            </div>
+            <div style="background:#F3F7FC;padding:52px 20px">
+              <h2 style="margin:0 0 20px 0;font-size:26px;font-weight:800;color:#16324F">Questions, <span style="color:#39B7EC">Answered</span>.</h2>
+              <div style="border-top:1px solid #E3EBF4">
+                <div style="border-bottom:1px solid #E3EBF4;padding:18px 2px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+                    <div style="font-size:15px;font-weight:800;color:#16324F">I’m not comfortable on camera. Will this work?</div>
+                    <div style="color:#39B7EC;font-size:20px;font-weight:600;line-height:1">−</div>
+                  </div>
+                  <p style="margin:10px 0 0 0;font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">That’s the most common worry — and the first thing that disappears. No script, no studio: a warm conversation in your living room. Most people forget the camera within ten minutes.</p>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #E3EBF4;padding:18px 2px">
+                  <div style="font-size:15px;font-weight:800;color:#16324F">How long does the process take?</div>
+                  <div style="color:#39B7EC;font-size:20px;font-weight:600;line-height:1">+</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #E3EBF4;padding:18px 2px">
+                  <div style="font-size:15px;font-weight:800;color:#16324F">Where is it filmed?</div>
+                  <div style="color:#39B7EC;font-size:20px;font-weight:600;line-height:1">+</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #E3EBF4;padding:18px 2px">
+                  <div style="font-size:15px;font-weight:800;color:#16324F">What media can we include?</div>
+                  <div style="color:#39B7EC;font-size:20px;font-weight:600;line-height:1">+</div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #E3EBF4;padding:18px 2px">
+                  <div style="font-size:15px;font-weight:800;color:#16324F">What does it cost?</div>
+                  <div style="color:#39B7EC;font-size:20px;font-weight:600;line-height:1">+</div>
+                </div>
+              </div>
+            </div>
+            <div style="position:relative;background:#16324F;overflow:hidden;text-align:center">
+              <div style="height:10px;background:#0B1D30"></div>
+              <div style="padding:48px 20px">
+                <h2 style="margin:0 0 10px 0;font-size:26px;line-height:1.2;font-weight:800;color:#FFFFFF">One Day, Your Grandchildren Will Press <span style="color:#39B7EC">Play</span>.</h2>
+                <p style="margin:0 0 24px 0;font-size:15px;color:rgba(255,255,255,.8);font-weight:500">Give them your voice.</p>
+                <a href="#" style="display:block;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15.5px;padding:15px 0;border-radius:12px;margin-bottom:10px">Schedule a Discovery Call</a>
+                <a href="tel:754-276-1601" style="display:block;border:1.5px solid rgba(255,255,255,.25);color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 0;border-radius:12px">Call 754-276-1601</a>
+              </div>
+              <div style="height:10px;background:#0B1D30"></div>
+            </div>
+            <div style="position:relative;height:190px;background-image:linear-gradient(rgba(67,109,165,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(67,109,165,.08) 1px, transparent 1px);background-size:36px 36px;background-color:#E8EFF6">
+              <div style="position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#39B7EC;box-shadow:0 8px 20px rgba(57,183,236,.45)"><div style="width:9px;height:9px;border-radius:50%;background:#FFFFFF"></div></div>
+              <div style="position:absolute;left:16px;right:16px;bottom:14px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:12px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:12.5px;line-height:1.5;color:#34495E;font-weight:600">6630 Meade Street, Hollywood, FL 33024</div>
+                <a href="#" style="font-size:12.5px;font-weight:800;color:#436DA5;flex-shrink:0;margin-left:12px">Directions →</a>
+              </div>
+            </div>
+            <div style="background:#16324F;padding:36px 20px 90px 20px">
+              <div style="font-weight:800;font-size:16px;margin-bottom:10px"><span style="color:#FFFFFF">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+              <div style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.65);font-weight:500;margin-bottom:14px">6630 Meade Street, Hollywood, FL 33024<br>754-276-1601</div>
+              <div style="display:flex;gap:12px;margin-bottom:18px">
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Facebook</a>
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Yelp</a>
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Instagram</a>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="color:#39B7EC;font-size:12px;letter-spacing:2px">★★★★★</span><span style="font-size:12px;font-weight:700;color:rgba(255,255,255,.7)">5.0 Google & Yelp</span></div>
+              <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,.4);margin-top:16px">© 2026 Memory Converter · Hollywood, FL</div>
+            </div>
+      </div>
+    </div>
+    </sc-if>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;filmGrain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Style&quot;},&quot;showMobile&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Canvas&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      grain: this.props.filmGrain ?? true,
+      showMobile: this.props.showMobile ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+	"name": "realome",
+	"version": "1.0.0",
+	"slug": "realome",
+	"textdomain": "realome",
+	"private": true,
+	"item_title": "Realome - Real Estate Block Base WordPress Theme",
+	"description": "A Theme for Real Estate and blog website",
+	"theme_uri": "https://www.energeticthemes.com/themes/realome/",
+	"author": "Amjad Ali",
+	"author_uri": "https://www.energeticthemes.com/",
+	"author_shop": "EnergeticThemes",
+	"license": "http://www.gnu.org/licenses/gpl-3.0.html GNU Public License",
+	"copyright": "Copyright (c), EnergeticThemes",
+	"files": [
+		"*"
+	],
+	"devDependencies": {
+		"@wordpress/scripts": "^23.0.0",
+		"@wordpress/stylelint-config": "^20.0.2",
+		"autoprefixer": "^10.4.4",
+		"cssnano": "^5.1.7",
+		"postcss": "^8.4.12",
+		"postcss-import": "^14.1.0",
+		"postcss-nesting": "^10.1.4",
+		"tailwindcss": "^3.0.23",
+		"vuepress": "^2.0.0-beta.45"
+	},
+	"scripts": {
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"packages-update": "wp-scripts packages-update",
+		"theme-zip": "wp-scripts plugin-zip",
+		"lint:css": "wp-scripts lint-style",
+		"docs:dev": "vuepress dev docs",
+		"docs:build": "vuepress build docs"
+	}
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #E9EDF3; font-family: 'Manrope', 'Helvetica Neue', sans-serif; color: #34495E; }
+  a { color: #39B7EC; text-decoration: none; }
+  a:hover { color: #436DA5; }
+  ::selection { background: rgba(57,183,236,.25); }
+  input, textarea { font-family: 'Manrope', 'Helvetica Neue', sans-serif; }
+  input::placeholder, textarea::placeholder { color: #8FA2B8; font-weight: 500; }
+</style>
+</helmet>
+
+<section style="padding:40px 48px 96px 48px">
+  <div style="display:flex;align-items:baseline;gap:14px;margin:0 0 32px 4px;flex-wrap:wrap">
+    <div style="background:#16324F;color:#FFFFFF;font-weight:800;font-size:13px;padding:6px 12px;border-radius:8px">PAGE</div>
+    <div style="font-weight:800;font-size:19px;color:#16324F">Contact / Free Quote</div>
+    <div style="font-family:ui-monospace,monospace;font-size:12.5px;color:#64748B;background:#FFFFFF;border:1px solid #D6DEE9;padding:4px 10px;border-radius:7px">/contact</div>
+    <div style="font-size:13px;color:#64748B;font-weight:600">working form — service toggles &amp; submit are interactive · replaces the price-estimate page</div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:72px;align-items:flex-start">
+
+    <!-- ================= DESKTOP 1440 ================= -->
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">desktop · 1440</div>
+      <div data-screen-label="Contact — Desktop" style="width:1440px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+
+        <div style="display:flex;align-items:center;justify-content:space-between;height:72px;padding:0 48px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+          <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;color:inherit">
+            <img src="../assets/logo.jpg" alt="Memory Converter" style="width:44px;height:44px;mix-blend-mode:multiply">
+            <span>
+              <span style="display:block;font-weight:800;font-size:18px;line-height:1.1"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></span>
+              <span style="display:block;font-size:10px;font-weight:700;letter-spacing:.14em;color:#8296AB">HOLLYWOOD, FL</span>
+            </span>
+          </a>
+          <div style="display:flex;align-items:center;gap:24px">
+            <span style="font-size:13.5px;font-weight:600;color:#64748B">Questions? A real person picks up.</span>
+            <a href="tel:754-276-1601" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:#436DA5">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+              754-276-1601</a>
+          </div>
+        </div>
+
+        <div style="position:relative;background:#16324F;overflow:hidden">
+          <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(120% 90% at 70% 0%, rgba(57,183,236,.10), rgba(57,183,236,0) 55%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+          <div style="position:relative;padding:52px 120px 46px 120px">
+            <div style="font-size:12.5px;font-weight:800;letter-spacing:.16em;color:#39B7EC;margin-bottom:14px">FREE QUOTE · NO OBLIGATION</div>
+            <h1 style="margin:0 0 12px 0;font-size:40px;line-height:1.08;font-weight:800;color:#FFFFFF;letter-spacing:-.01em">Let's Talk About Your <span style="color:#39B7EC">Memories</span>.</h1>
+            <div style="display:flex;gap:10px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.7)">
+              <span>Tell me what you have — I reply with your exact quote</span><span style="color:#39B7EC">·</span>
+              <span>Within one business day</span><span style="color:#39B7EC">·</span>
+              <span>Originals always returned</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#F3F7FC;padding:56px 120px 72px 120px">
+          <div style="display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start">
+
+            <!-- FORM CARD -->
+            <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+              <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
+                <div style="padding:30px 32px 32px 32px">
+                  <div style="font-size:21px;font-weight:800;color:#16324F;margin-bottom:6px">Send a message</div>
+                  <div style="font-size:14px;color:#64748B;font-weight:600;margin-bottom:22px">Every message comes straight to Jeremy — no call centers, no bots.</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px">
+                    <div><div style="font-size:12.5px;font-weight:800;color:#16324F;margin-bottom:6px">Name</div><input type="text" placeholder="Your name" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14.5px;font-weight:600;color:#16324F;outline:none"></div>
+                    <div><div style="font-size:12.5px;font-weight:800;color:#16324F;margin-bottom:6px">Email</div><input type="email" placeholder="you@example.com" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14.5px;font-weight:600;color:#16324F;outline:none"></div>
+                  </div>
+                  <div style="margin-bottom:20px"><div style="font-size:12.5px;font-weight:800;color:#16324F;margin-bottom:6px">Phone</div><input type="tel" placeholder="(555) 555-5555" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14.5px;font-weight:600;color:#16324F;outline:none"></div>
+
+                  <div style="font-size:12.5px;font-weight:800;color:#16324F;margin-bottom:10px">What can I help you with? <span style="color:#8296AB;font-weight:600">(pick any)</span></div>
+                  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px">
+                    <div onClick="{{ togVideos }}" style="{{ svcVideosStyle }}">
+                      <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:11px;background:rgba(57,183,236,.12)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12" rx="2"></rect><circle cx="8" cy="12" r="2.3"></circle><circle cx="16" cy="12" r="2.3"></circle><line x1="10.4" y1="12" x2="13.6" y2="12"></line></svg></div>
+                      <div style="font-size:15px;font-weight:800;color:#16324F">Videos</div>
+                      <div style="font-size:12px;color:#64748B;font-weight:600;line-height:1.45">Tapes, film reels, camcorder &amp; discs</div>
+                    </div>
+                    <div onClick="{{ togPhotos }}" style="{{ svcPhotosStyle }}">
+                      <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:11px;background:rgba(57,183,236,.12)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"></rect><circle cx="9" cy="10" r="1.7"></circle><path d="M3 16.5l5-4 4 3 4-3.5 5 4.5"></path></svg></div>
+                      <div style="font-size:15px;font-weight:800;color:#16324F">Photos</div>
+                      <div style="font-size:12px;color:#64748B;font-weight:600;line-height:1.45">Prints, slides, negatives &amp; restoration</div>
+                    </div>
+                    <div onClick="{{ togLM }}" style="{{ svcLMStyle }}">
+                      <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:11px;background:rgba(57,183,236,.12)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+                      <div style="font-size:15px;font-weight:800;color:#16324F">Living Memories</div>
+                      <div style="font-size:12px;color:#64748B;font-weight:600;line-height:1.45">Your story, filmed as a documentary</div>
+                    </div>
+                  </div>
+
+                  <div style="margin-bottom:18px"><div style="font-size:12.5px;font-weight:800;color:#16324F;margin-bottom:6px">Message <span style="color:#8296AB;font-weight:600">(optional)</span></div><textarea placeholder="What do you have, roughly how much, any deadlines — or just say hello." style="width:100%;box-sizing:border-box;height:110px;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14.5px;font-weight:600;color:#16324F;outline:none;resize:none"></textarea></div>
+
+                  <div onClick="{{ togNews }}" style="display:flex;align-items:flex-start;gap:11px;cursor:pointer;margin-bottom:22px">
+                    <div style="{{ newsBoxStyle }}"><sc-if value="{{ news }}" hint-placeholder-val="{{ true }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg></sc-if></div>
+                    <div style="font-size:13px;line-height:1.5;color:#4A5D73;font-weight:600">Send me occasional memory-preservation tips and studio news. <span style="color:#8296AB">No spam — unsubscribe any time.</span></div>
+                  </div>
+
+                  <div style="display:flex;align-items:center;justify-content:space-between">
+                    <div style="font-size:13px;color:#64748B;font-weight:600">Prefer the phone? <a href="tel:754-276-1601" style="font-weight:800;color:#436DA5">754-276-1601</a></div>
+                    <div onClick="{{ submit }}" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:16px 34px;border-radius:12px;cursor:pointer" style-hover="background:#3A5F91">Send Message →</div>
+                  </div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:56px 32px;text-align:center">
+                  <div style="display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:rgba(57,183,236,.14);margin:0 auto 18px auto"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg></div>
+                  <div style="font-size:24px;font-weight:800;color:#16324F;margin-bottom:8px">Message sent.</div>
+                  <div style="font-size:15px;line-height:1.6;color:#4A5D73;font-weight:500;max-width:420px;margin:0 auto 20px auto">Jeremy will reply within one business day with your quote and next steps.</div>
+                  <div onClick="{{ reset }}" style="display:inline-block;font-size:14px;font-weight:800;color:#436DA5;cursor:pointer">Send another message</div>
+                </div>
+              </sc-if>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div style="background:#16324F;border-radius:16px;padding:28px;box-shadow:0 16px 40px rgba(22,50,79,.25)">
+              <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:#39B7EC;margin-bottom:18px">WHAT HAPPENS NEXT</div>
+              <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:22px">
+                <div style="display:flex;gap:12px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1.5px solid #39B7EC;color:#39B7EC;font-size:12.5px;font-weight:800;flex-shrink:0">1</div>
+                  <div style="font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.85);font-weight:600">I read every message personally — no call centers, nothing automated.</div>
+                </div>
+                <div style="display:flex;gap:12px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1.5px solid #39B7EC;color:#39B7EC;font-size:12.5px;font-weight:800;flex-shrink:0">2</div>
+                  <div style="font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.85);font-weight:600">You get a reply within one business day with your exact quote — flat rates, no per-minute or per-foot fees.</div>
+                </div>
+                <div style="display:flex;gap:12px;align-items:flex-start">
+                  <div style="display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1.5px solid #39B7EC;color:#39B7EC;font-size:12.5px;font-weight:800;flex-shrink:0">3</div>
+                  <div style="font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.85);font-weight:600">Drop off, local pickup, or a free insured mail-in kit — you choose. No obligation, ever.</div>
+                </div>
+              </div>
+              <div style="height:1px;background:rgba(255,255,255,.14);margin-bottom:18px"></div>
+              <div style="display:flex;align-items:center;gap:8px;background:rgba(57,183,236,.12);border:1px solid rgba(57,183,236,.4);border-radius:99px;padding:8px 14px;margin-bottom:20px;width:fit-content">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
+                <span style="font-size:12px;font-weight:800;color:#39B7EC">Turnaround: 24 hours – 1 week</span>
+              </div>
+              <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:10px">VISIT THE STUDIO</div>
+              <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.78);font-weight:500;margin-bottom:14px">6630 Meade Street<br>Hollywood, FL 33024</div>
+              <a href="tel:754-276-1601" style="display:flex;align-items:center;gap:9px;font-weight:800;font-size:16px;color:#39B7EC">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+                754-276-1601</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;background:#16324F;padding:22px 48px">
+          <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.55)">© 2026 Memory Converter · 6630 Meade Street, Hollywood, FL 33024</div>
+          <div style="display:flex;align-items:center;gap:22px">
+            <a href="tel:754-276-1601" style="font-size:13px;font-weight:800;color:#39B7EC">754-276-1601</a>
+            <a href="Home.dc.html" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.65)" style-hover="color:#39B7EC">Back to site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MOBILE 390 ================= -->
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">mobile · 390</div>
+      <div data-screen-label="Contact — Mobile" style="width:390px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+        <div style="display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 16px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+          <a href="Home.dc.html" style="display:flex;align-items:center;gap:9px;color:inherit">
+            <img src="../assets/logo.jpg" alt="Memory Converter" style="width:34px;height:34px;mix-blend-mode:multiply">
+            <span style="font-weight:800;font-size:15px"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></span>
+          </a>
+          <a href="tel:754-276-1601" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg></a>
+        </div>
+        <div style="position:relative;background:#16324F;overflow:hidden;padding:30px 20px 26px 20px">
+          <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 70% at 50% 0%, rgba(57,183,236,.10), rgba(57,183,236,0) 55%)"></div>
+          <div style="position:relative">
+            <div style="font-size:10.5px;font-weight:800;letter-spacing:.15em;color:#39B7EC;margin-bottom:10px">FREE QUOTE · NO OBLIGATION</div>
+            <h2 style="margin:0 0 8px 0;font-size:25px;line-height:1.12;font-weight:800;color:#FFFFFF">Let's Talk About Your <span style="color:#39B7EC">Memories</span>.</h2>
+            <div style="font-size:12.5px;font-weight:600;color:rgba(255,255,255,.7)">Reply within one business day · no obligation</div>
+          </div>
+        </div>
+
+        <div style="background:#F3F7FC;padding:20px 16px 32px 16px">
+          <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:14px;padding:18px 16px 20px 16px">
+            <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px">
+                <input type="text" placeholder="Your name" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14px;font-weight:600;color:#16324F;outline:none">
+                <input type="email" placeholder="you@example.com" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14px;font-weight:600;color:#16324F;outline:none">
+                <input type="tel" placeholder="(555) 555-5555" style="width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14px;font-weight:600;color:#16324F;outline:none">
+              </div>
+              <div style="font-size:12px;font-weight:800;color:#16324F;margin-bottom:8px">What can I help you with?</div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px">
+                <div onClick="{{ togVideos }}" style="{{ svcVideosStyleM }}">
+                  <span style="font-size:14px;font-weight:800;color:#16324F">Videos</span>
+                  <span style="font-size:11.5px;color:#64748B;font-weight:600">Tapes · film · discs</span>
+                </div>
+                <div onClick="{{ togPhotos }}" style="{{ svcPhotosStyleM }}">
+                  <span style="font-size:14px;font-weight:800;color:#16324F">Photos</span>
+                  <span style="font-size:11.5px;color:#64748B;font-weight:600">Prints · slides · negatives</span>
+                </div>
+                <div onClick="{{ togLM }}" style="{{ svcLMStyleM }}">
+                  <span style="font-size:14px;font-weight:800;color:#16324F">Living Memories</span>
+                  <span style="font-size:11.5px;color:#64748B;font-weight:600">Documentary</span>
+                </div>
+              </div>
+              <textarea placeholder="Message (optional)" style="width:100%;box-sizing:border-box;height:84px;padding:13px 14px;border:1.5px solid #D7E2EE;border-radius:10px;font-size:14px;font-weight:600;color:#16324F;outline:none;resize:none;margin-bottom:14px"></textarea>
+              <div onClick="{{ togNews }}" style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;margin-bottom:16px">
+                <div style="{{ newsBoxStyle }}"><sc-if value="{{ news }}" hint-placeholder-val="{{ true }}"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg></sc-if></div>
+                <div style="font-size:12px;line-height:1.5;color:#4A5D73;font-weight:600">Send me occasional memory-preservation tips. No spam.</div>
+              </div>
+              <div onClick="{{ submit }}" style="display:block;text-align:center;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15.5px;padding:15px 0;border-radius:12px;cursor:pointer">Send Message →</div>
+            </sc-if>
+            <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:32px 8px;text-align:center">
+                <div style="display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:rgba(57,183,236,.14);margin:0 auto 14px auto"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg></div>
+                <div style="font-size:19px;font-weight:800;color:#16324F;margin-bottom:6px">Message sent.</div>
+                <div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500;margin-bottom:14px">Jeremy replies within one business day.</div>
+                <div onClick="{{ reset }}" style="font-size:13px;font-weight:800;color:#436DA5;cursor:pointer">Send another message</div>
+              </div>
+            </sc-if>
+          </div>
+          <div style="text-align:center;padding:18px 0 0 0">
+            <div style="font-size:12.5px;font-weight:600;color:#64748B;margin-bottom:6px">Prefer the phone?</div>
+            <a href="tel:754-276-1601" style="font-size:15px;font-weight:800;color:#436DA5">Call 754-276-1601</a>
+          </div>
+        </div>
+        <div style="background:#16324F;padding:20px;text-align:center">
+          <div style="font-size:11.5px;font-weight:600;color:rgba(255,255,255,.55)">© 2026 Memory Converter · Hollywood, FL · <a href="Home.dc.html" style="color:#39B7EC;font-weight:700">Back to site</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { svc: { videos: true, photos: false, lm: false }, news: true, sent: false };
+  renderVals() {
+    const on = k => this.state.svc[k];
+    const tog = k => () => this.setState(s => ({ svc: Object.assign({}, s.svc, { [k]: !s.svc[k] }) }));
+    const card = a => 'display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:13px;cursor:pointer;' + (a ? 'border:2px solid #39B7EC;background:rgba(57,183,236,.05)' : 'border:2px solid #E3EBF4;background:#FFFFFF');
+    const row = a => 'display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 15px;border-radius:11px;cursor:pointer;' + (a ? 'border:2px solid #39B7EC;background:rgba(57,183,236,.05)' : 'border:2px solid #E3EBF4;background:#FFFFFF');
+    return {
+      formOpen: !this.state.sent, sent: this.state.sent, news: this.state.news,
+      togVideos: tog('videos'), togPhotos: tog('photos'), togLM: tog('lm'),
+      svcVideosStyle: card(on('videos')), svcPhotosStyle: card(on('photos')), svcLMStyle: card(on('lm')),
+      svcVideosStyleM: row(on('videos')), svcPhotosStyleM: row(on('photos')), svcLMStyleM: row(on('lm')),
+      togNews: () => this.setState(s => ({ news: !s.news })),
+      newsBoxStyle: 'display:flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:6px;flex-shrink:0;margin-top:1px;' + (this.state.news ? 'background:#39B7EC;border:1.5px solid #39B7EC' : 'background:#FFFFFF;border:1.5px solid #C9D6E5'),
+      submit: () => this.setState({ sent: true }),
+      reset: () => this.setState({ sent: false })
+    };
+  }
+}
+</script>
+</body>
+</html>

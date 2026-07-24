@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #E9EDF3; font-family: 'Manrope', 'Helvetica Neue', sans-serif; color: #34495E; }
+  a { color: #39B7EC; text-decoration: none; }
+  a:hover { color: #436DA5; }
+  ::selection { background: rgba(57,183,236,.25); }
+</style>
+</helmet>
+
+<section style="padding:40px 48px 96px 48px">
+  <div style="display:flex;align-items:baseline;gap:14px;margin:0 0 32px 4px;flex-wrap:wrap">
+    <div style="background:#16324F;color:#FFFFFF;font-weight:800;font-size:13px;padding:6px 12px;border-radius:8px">HOME</div>
+    <div style="font-weight:800;font-size:20px;color:#16324F">Homepage</div>
+    <div style="font-size:13px;color:#64748B;font-weight:500">/ · direction 1a Archive Classic</div>
+    <a href="Sitemap.dc.html" style="font-size:13px;font-weight:800;color:#436DA5">← all pages</a>
+  </div>
+  <div style="display:flex;gap:40px;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">desktop · 1440</div>
+      <div data-screen-label="Homepage — Desktop" style="width:1440px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+
+
+            <!-- header -->
+            <div style="display:flex;align-items:center;justify-content:space-between;height:78px;padding:0 48px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+              <div style="display:flex;align-items:center;gap:12px">
+                <img src="../assets/logo.jpg" alt="Memory Converter" style="width:46px;height:46px;mix-blend-mode:multiply">
+                <div>
+                  <div style="font-weight:800;font-size:19px;line-height:1.1"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+                  <div style="font-size:10px;font-weight:700;letter-spacing:.14em;color:#8296AB">HOLLYWOOD, FL</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:30px">
+                <a href="Our Services.dc.html" style="font-size:15px;font-weight:600;color:#34495E">Services</a>
+                <a href="#" style="font-size:15px;font-weight:600;color:#34495E">How It Works</a>
+                <a href="#" style="font-size:15px;font-weight:600;color:#34495E">Reviews</a>
+                <a href="Areas Served.dc.html" style="font-size:15px;font-weight:600;color:#34495E">Areas Served</a>
+                <a href="Reel Revival.dc.html" style="font-size:15px;font-weight:600;color:#34495E">Reel Revival</a>
+              </div>
+              <div style="display:flex;align-items:center;gap:20px">
+                <a href="tel:754-276-1601" style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:#436DA5">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+                  754-276-1601</a>
+                <a href="Contact.dc.html" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 24px;border-radius:12px" style-hover="background:#3A5F91">Get a Free Quote</a>
+              </div>
+            </div>
+
+            <!-- hero -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(120% 90% at 70% 0%, rgba(57,183,236,.10), rgba(57,183,236,0) 55%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding:88px 120px 80px 120px">
+                <div>
+                  <div style="font-size:13px;font-weight:800;letter-spacing:.16em;color:#39B7EC;margin-bottom:20px">PREMIUM MEMORY DIGITIZATION · HOLLYWOOD, FL</div>
+                  <h1 style="margin:0 0 22px 0;font-size:58px;line-height:1.06;font-weight:800;color:#FFFFFF;letter-spacing:-.01em;text-wrap:balance">Your Memories, Preserved <span style="color:#39B7EC">Forever</span>.</h1>
+                  <p style="margin:0 0 32px 0;font-size:18px;line-height:1.65;color:rgba(255,255,255,.82);max-width:540px;font-weight:500">Memory Converter is the white-glove digital media converter that turns your old VHS tapes, film reels, photos, and audio into crisp digital you can watch, share, and keep for good.</p>
+                  <div style="display:flex;gap:14px;margin-bottom:26px">
+                    <a href="Contact.dc.html" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:16px 30px;border-radius:12px" style-hover="background:#3A5F91">Get a Free Quote</a>
+                    <a href="#" style="border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:16px;padding:16px 30px;border-radius:12px" style-hover="background:rgba(57,183,236,.12)">See How It Works</a>
+                  </div>
+                  <div style="display:flex;gap:10px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.66)">
+                    <span>Handled 100% in-house in Hollywood, FL</span><span style="color:#39B7EC">·</span>
+                    <span>Insured, tracked shipping</span><span style="color:#39B7EC">·</span>
+                    <span>Free return of your originals</span>
+                  </div>
+                </div>
+                <div style="position:relative">
+                  <div style="display:flex;align-items:center;justify-content:center;height:440px;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.35);background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C">
+                    <span style="font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.06em;color:rgba(255,255,255,.6)">photo — family watching digitized home movies</span>
+                  </div>
+                  <div style="position:absolute;left:-28px;bottom:-24px;display:flex;align-items:center;gap:10px;background:#FFFFFF;border-radius:14px;padding:14px 20px;box-shadow:0 16px 40px rgba(0,0,0,.3)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg>
+                    <div><div style="font-weight:800;font-size:14px;color:#16324F">Digitized by hand in 4K/5K</div><div style="font-size:12px;color:#64748B;font-weight:600">Never outsourced overseas</div></div>
+                  </div>
+                </div>
+              </div>
+              <!-- format icon row -->
+              <div style="position:relative;display:flex;gap:12px;padding:0 120px 56px 120px">
+                <div style="display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:9px 14px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12" rx="2"></rect><circle cx="8" cy="12" r="2.3"></circle><circle cx="16" cy="12" r="2.3"></circle><line x1="10.4" y1="12" x2="13.6" y2="12"></line></svg><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.85)">VHS &amp; Video</span></div>
+                <div style="display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:9px 14px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="7" r="1.6"></circle><circle cx="12" cy="17" r="1.6"></circle><circle cx="7" cy="12" r="1.6"></circle><circle cx="17" cy="12" r="1.6"></circle></svg><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.85)">8mm &amp; Super 8 Film</span></div>
+                <div style="display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:9px 14px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"></rect><circle cx="9" cy="10" r="1.7"></circle><path d="M3 16.5l5-4 4 3 4-3.5 5 4.5"></path></svg><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.85)">Photos &amp; Slides</span></div>
+                <div style="display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:9px 14px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2"></rect><circle cx="8.5" cy="11.5" r="2"></circle><circle cx="15.5" cy="11.5" r="2"></circle><path d="M7 18.5l1.5-3h7l1.5 3"></path></svg><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.85)">Cassettes &amp; Audio</span></div>
+                <div style="display:flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:9px 14px"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="13" height="10" rx="2"></rect><path d="M15.5 10.5l6-2.5v8l-6-2.5"></path><circle cx="9" cy="12" r="2.2"></circle></svg><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.85)">MiniDV &amp; Camcorder</span></div>
+              </div>
+            </div>
+
+            <!-- trust band -->
+            <div style="background:#F3F7FC;border-bottom:1px solid #E3EBF4;padding:22px 120px;display:flex;flex-wrap:wrap;justify-content:center;column-gap:34px;row-gap:12px">
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">BBB Accredited</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">Family-owned since 2020</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">5-star on Google &amp; Yelp</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">4K/5K in-house scanning</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">Never outsourced overseas</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">Insured &amp; tracked shipping</span></div>
+              <div style="display:flex;align-items:center;gap:8px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13.5px;font-weight:700;color:#34495E">3,000+ tapes &amp; 40,000+ photos digitized</span></div>
+            </div>
+
+            <!-- services -->
+            <div style="background:#FFFFFF;padding:96px 120px">
+              <div style="max-width:640px;margin-bottom:52px">
+                <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">Every Format, Preserved by <span style="color:#39B7EC">Hand</span>.</h2>
+                <p style="margin:0;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500">Each service has its own dedicated studio process — cleaned, converted, and quality-checked one item at a time in Hollywood, FL.</p>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12" rx="2"></rect><circle cx="8" cy="12" r="2.3"></circle><circle cx="16" cy="12" r="2.3"></circle><line x1="10.4" y1="12" x2="13.6" y2="12"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">VHS &amp; Video Tapes</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Every tape digitized by hand in crisp 4K — from $18 per tape.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="7" r="1.6"></circle><circle cx="12" cy="17" r="1.6"></circle><circle cx="7" cy="12" r="1.6"></circle><circle cx="17" cy="12" r="1.6"></circle></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">8mm &amp; Super 8 Film</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Frame-by-frame 5K scans that make old reels look new.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2"></rect><circle cx="8.5" cy="11.5" r="2"></circle><circle cx="15.5" cy="11.5" r="2"></circle><path d="M7 18.5l1.5-3h7l1.5 3"></path></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">Cassettes &amp; Audio</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Voices and mixtapes rescued, mastered, and preserved.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"></rect><circle cx="9" cy="10" r="1.7"></circle><path d="M3 16.5l5-4 4 3 4-3.5 5 4.5"></path></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">Photos &amp; Slides</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Archival-quality scans from $0.72 per photo or slide.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="13" height="10" rx="2"></rect><path d="M15.5 10.5l6-2.5v8l-6-2.5"></path><circle cx="9" cy="12" r="2.2"></circle></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">MiniDV &amp; Camcorder Tapes</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Hi8, Digital8, MiniDV, DVCAM, HDV — handled like the originals they are.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="display:block;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.05);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.12)">
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.12);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8.5" width="18" height="11" rx="2"></rect><rect x="2" y="4.5" width="20" height="4" rx="1.2"></rect><line x1="9.5" y1="13" x2="14.5" y2="13"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#16324F;margin-bottom:8px">White-Glove Archiving</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:#4A5D73;font-weight:500;margin-bottom:14px">Your whole family archive, organized end to end.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">View service →</div>
+                </a>
+                <a href="#" style="position:relative;display:block;grid-column:span 2;background:#16324F;border:1px solid #16324F;border-radius:16px;padding:28px;box-shadow:0 8px 24px rgba(22,50,79,.15);color:inherit;transition:transform .18s, box-shadow .18s" style-hover="transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,50,79,.3)">
+                  <div style="position:absolute;top:20px;right:20px;background:#39B7EC;color:#16324F;font-size:11.5px;font-weight:800;letter-spacing:.08em;padding:6px 12px;border-radius:99px">EXCLUSIVE</div>
+                  <div style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(57,183,236,.18);margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+                  <div style="font-size:18px;font-weight:800;color:#FFFFFF;margin-bottom:8px">Living Memories</div>
+                  <div style="font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.78);font-weight:500;margin-bottom:14px;max-width:520px">An in-home documentary of your life story — your voice on camera, your digitized memories woven in. From $1,800.</div>
+                  <div style="font-size:14px;font-weight:800;color:#39B7EC">Explore Living Memories →</div>
+                </a>
+                <div style="display:flex;align-items:center;justify-content:center;border:1.5px dashed #C9D6E5;border-radius:16px;padding:28px">
+                  <a href="Living Memories.dc.html" style="font-size:15px;font-weight:800;color:#436DA5">See all services →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Living Memories spotlight -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(110% 100% at 20% 0%, rgba(57,183,236,.08), rgba(57,183,236,0) 55%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:88px 120px">
+                <div>
+                  <div style="font-size:13px;font-weight:800;letter-spacing:.16em;color:#39B7EC;margin-bottom:18px">ONLY FROM MEMORY CONVERTER</div>
+                  <h2 style="margin:0 0 18px 0;font-size:40px;line-height:1.12;font-weight:800;color:#FFFFFF;letter-spacing:-.01em;text-wrap:balance">Turn Your Memories Into a <span style="color:#39B7EC">Documentary</span> of Your Life.</h2>
+                  <p style="margin:0 0 28px 0;font-size:16.5px;line-height:1.65;color:rgba(255,255,255,.8);font-weight:500;max-width:520px">Living Memories films your story on camera in your own home, then weaves your digitized photos and home movies into a cinematic family history — something no other studio offers.</p>
+                  <div style="display:flex;align-items:center;gap:18px">
+                    <a href="Living Memories.dc.html" style="border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:16px;padding:15px 28px;border-radius:12px" style-hover="background:rgba(57,183,236,.12)">Explore Living Memories</a>
+                    <div style="font-size:14px;font-weight:800;color:rgba(255,255,255,.7)">From $1,800</div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex;align-items:center;justify-content:center;height:360px;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.35);background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C">
+                    <span style="font-family:ui-monospace,monospace;font-size:12.5px;letter-spacing:.06em;color:rgba(255,255,255,.6)">photo — in-home interview being filmed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- how it works -->
+            <div style="background:#F3F7FC;padding:96px 120px">
+              <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:52px">
+                <h2 style="margin:0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">How It <span style="color:#39B7EC">Works</span>.</h2>
+                <div style="font-size:14.5px;font-weight:700;color:#4A5D73">Simple orders can be done in 24 hours; the largest projects take about a week.</div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4.5-9 4.5-9-4.5z"></path><path d="M3 7.5v9l9 4.5 9-4.5v-9"></path><line x1="12" y1="12" x2="12" y2="21"></line></svg></div>
+                    <div style="font-size:15px;font-weight:800;color:#C3D2E3">01</div>
+                  </div>
+                  <div style="font-size:17px;font-weight:800;color:#16324F;margin-bottom:8px">Get your free quote</div>
+                  <div style="font-size:14px;line-height:1.6;color:#4A5D73;font-weight:500">Tell us what you have. We send a prepaid, insured shipping kit — or drop off at our Hollywood, FL studio.</div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linejoin="round"><path d="M12 4l1.8 6.2L20 12l-6.2 1.8L12 20l-1.8-6.2L4 12l6.2-1.8z"></path></svg></div>
+                    <div style="font-size:15px;font-weight:800;color:#C3D2E3">02</div>
+                  </div>
+                  <div style="font-size:17px;font-weight:800;color:#16324F;margin-bottom:8px">Digitized by hand</div>
+                  <div style="font-size:14px;line-height:1.6;color:#4A5D73;font-weight:500">Every item is cleaned, repaired if needed, and converted in-house in 4K/5K. Never outsourced.</div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="12.5" rx="2"></rect><line x1="9" y1="20.5" x2="15" y2="20.5"></line><line x1="12" y1="17" x2="12" y2="20.5"></line></svg></div>
+                    <div style="font-size:15px;font-weight:800;color:#C3D2E3">03</div>
+                  </div>
+                  <div style="font-size:17px;font-weight:800;color:#16324F;margin-bottom:8px">Review online</div>
+                  <div style="font-size:14px;line-height:1.6;color:#4A5D73;font-weight:500">Watch and approve your digitized memories from a private online gallery, from any device.</div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:28px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10.5l-4 4 4 4"></path><path d="M5 14.5h11a5 5 0 005-5v-4"></path></svg></div>
+                    <div style="font-size:15px;font-weight:800;color:#C3D2E3">04</div>
+                  </div>
+                  <div style="font-size:17px;font-weight:800;color:#16324F;margin-bottom:8px">Everything returned</div>
+                  <div style="font-size:14px;line-height:1.6;color:#4A5D73;font-weight:500">Your new digital files delivered by cloud, USB, or DVD — and every original returned safely.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- areas served -->
+            <div style="background:#FFFFFF;padding:96px 120px">
+              <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center">
+                <div>
+                  <h2 style="margin:0 0 14px 0;font-size:40px;line-height:1.12;font-weight:800;color:#16324F;letter-spacing:-.01em">Serving <span style="color:#39B7EC">South Florida</span> — and Families Nationwide by Mail.</h2>
+                  <p style="margin:0 0 28px 0;font-size:16.5px;line-height:1.6;color:#4A5D73;font-weight:500;max-width:520px">Drop off in person at our Hollywood studio, schedule a local pickup, or use our free prepaid, insured mail-in kit from anywhere in the U.S.</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:10px;max-width:560px">
+                    <a href="City - Hollywood.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Hollywood</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Fort Lauderdale</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Miami</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Boca Raton</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Pompano Beach</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Coral Gables</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">Aventura</a>
+                    <a href="Areas Served.dc.html" style="border:1px solid #D7E2EE;background:#F3F7FC;color:#34495E;font-size:14px;font-weight:700;padding:10px 18px;border-radius:99px" style-hover="border-color:#39B7EC;color:#436DA5">West Palm Beach</a>
+                  </div>
+                </div>
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:16px;padding:32px">
+                  <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:rgba(57,183,236,.14)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4.5-9 4.5-9-4.5z"></path><path d="M3 7.5v9l9 4.5 9-4.5v-9"></path></svg></div>
+                    <div style="font-size:18px;font-weight:800;color:#16324F">Not in South Florida?</div>
+                  </div>
+                  <div style="font-size:15px;line-height:1.65;color:#4A5D73;font-weight:500;margin-bottom:18px">We serve families nationwide. Your free quote includes a prepaid, fully insured mail-in kit — tracked both ways, originals always returned.</div>
+                  <a href="Areas Served.dc.html" style="font-size:14.5px;font-weight:800;color:#436DA5">Start a mail-in order →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- reviews -->
+            <div style="background:#F3F7FC;padding:96px 120px">
+              <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:52px">
+                <h2 style="margin:0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">A Wall of <span style="color:#39B7EC">Stories</span>.</h2>
+                <div style="display:flex;align-items:center;gap:10px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:10px 20px">
+                  <span style="color:#39B7EC;font-size:15px;letter-spacing:2px">★★★★★</span>
+                  <span style="font-size:14px;font-weight:800;color:#16324F">5.0 on Google &amp; Yelp</span>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:30px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+                  <div style="color:#39B7EC;font-size:14px;letter-spacing:2px;margin-bottom:16px">★★★★★</div>
+                  <p style="margin:0 0 22px 0;font-size:15.5px;line-height:1.65;color:#34495E;font-weight:500">“My dad's Super 8 reels from 1968 look better than I remembered them. I cried watching the very first file.”</p>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:repeating-linear-gradient(45deg, rgba(67,109,165,.12) 0px, rgba(67,109,165,.12) 6px, rgba(67,109,165,0) 6px, rgba(67,109,165,0) 12px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:9px;color:#5B7188">photo</span></div>
+                    <div><div style="font-size:14.5px;font-weight:800;color:#16324F">Marisol G.</div><div style="font-size:13px;color:#64748B;font-weight:600">Coral Gables</div></div>
+                  </div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:30px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+                  <div style="color:#39B7EC;font-size:14px;letter-spacing:2px;margin-bottom:16px">★★★★★</div>
+                  <p style="margin:0 0 22px 0;font-size:15.5px;line-height:1.65;color:#34495E;font-weight:500">“Forty VHS tapes, every one returned in perfect condition. The online gallery made sharing with my kids effortless.”</p>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:repeating-linear-gradient(45deg, rgba(67,109,165,.12) 0px, rgba(67,109,165,.12) 6px, rgba(67,109,165,0) 6px, rgba(67,109,165,0) 12px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:9px;color:#5B7188">photo</span></div>
+                    <div><div style="font-size:14.5px;font-weight:800;color:#16324F">David R.</div><div style="font-size:13px;color:#64748B;font-weight:600">Boca Raton</div></div>
+                  </div>
+                </div>
+                <div style="background:#FFFFFF;border:1px solid #E3EBF4;border-radius:16px;padding:30px;box-shadow:0 8px 24px rgba(22,50,79,.05)">
+                  <div style="color:#39B7EC;font-size:14px;letter-spacing:2px;margin-bottom:16px">★★★★★</div>
+                  <p style="margin:0 0 22px 0;font-size:15.5px;line-height:1.65;color:#34495E;font-weight:500">“They restored the only photo I have of my grandmother — and let me review everything online before delivery.”</p>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:repeating-linear-gradient(45deg, rgba(67,109,165,.12) 0px, rgba(67,109,165,.12) 6px, rgba(67,109,165,0) 6px, rgba(67,109,165,0) 12px),#E4EDF6"><span style="font-family:ui-monospace,monospace;font-size:9px;color:#5B7188">photo</span></div>
+                    <div><div style="font-size:14.5px;font-weight:800;color:#16324F">Rachel S.</div><div style="font-size:13px;color:#64748B;font-weight:600">Hollywood</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ -->
+            <div style="background:#FFFFFF;padding:96px 120px">
+              <div style="display:grid;grid-template-columns:.8fr 1.2fr;gap:72px">
+                <div>
+                  <h2 style="margin:0 0 14px 0;font-size:40px;font-weight:800;color:#16324F;letter-spacing:-.01em">Questions, <span style="color:#39B7EC">Answered</span>.</h2>
+                  <p style="margin:0 0 24px 0;font-size:16px;line-height:1.6;color:#4A5D73;font-weight:500">Anything else? Call us — a real person in our Hollywood studio picks up.</p>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;color:#436DA5">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+                    754-276-1601</a>
+                </div>
+                <div>
+                  <div style="border-top:1px solid #E3EBF4">
+                    <div style="border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+                        <div style="font-size:17px;font-weight:800;color:#16324F">What formats do you accept?</div>
+                        <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">−</div>
+                      </div>
+                      <p style="margin:12px 0 0 0;font-size:15px;line-height:1.65;color:#4A5D73;font-weight:500;max-width:560px">VHS, VHS-C, S-VHS, Betamax, Hi8, Digital8, MiniDV and camcorder tapes; professional formats like U-matic, Betacam SP, Digital Betacam, DVCAM and HDV; 8mm and Super 8 film; photos, slides and negatives; cassettes, microcassettes and reel-to-reel; home-recorded DVDs, mini DVDs and CDs. Not sure what you have? Send us a photo and we'll identify it.</p>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">How long does it take?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">Is my media safe with you?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">Do you outsource any work overseas?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">What files do I get back?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:22px 4px">
+                      <div style="font-size:17px;font-weight:800;color:#16324F">What does it cost?</div>
+                      <div style="color:#39B7EC;font-size:22px;font-weight:600;line-height:1">+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA band -->
+            <div style="position:relative;background:#16324F;overflow:hidden">
+              <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+                <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(100% 120% at 50% 0%, rgba(57,183,236,.09), rgba(57,183,236,0) 60%),repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0px, rgba(255,255,255,.028) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 3px)"></div>
+              </sc-if>
+              <div style="position:relative;text-align:center;padding:88px 120px">
+                <h2 style="margin:0 0 14px 0;font-size:44px;font-weight:800;color:#FFFFFF;letter-spacing:-.01em">Don't Let Your Memories <span style="color:#39B7EC">Fade</span>.</h2>
+                <p style="margin:0 auto 32px auto;font-size:17px;line-height:1.6;color:rgba(255,255,255,.78);font-weight:500;max-width:520px">Tapes, film, and photos degrade a little more every year. Digitizing them takes one free quote.</p>
+                <div style="display:flex;justify-content:center;gap:16px">
+                  <a href="Contact.dc.html" style="background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:16px 32px;border-radius:12px" style-hover="background:#3A5F91">Get a Free Quote</a>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:9px;border:1.5px solid rgba(255,255,255,.25);color:#FFFFFF;font-weight:700;font-size:16px;padding:16px 26px;border-radius:12px" style-hover="border-color:#39B7EC;color:#39B7EC">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+                    Call 754-276-1601</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- map -->
+            <div style="position:relative;height:340px;background-image:linear-gradient(rgba(67,109,165,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(67,109,165,.08) 1px, transparent 1px);background-size:44px 44px;background-color:#E8EFF6">
+              <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-60%);display:flex;flex-direction:column;align-items:center;gap:2px">
+                <div style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#39B7EC;box-shadow:0 10px 24px rgba(57,183,236,.45)"><div style="width:10px;height:10px;border-radius:50%;background:#FFFFFF"></div></div>
+                <div style="width:2px;height:12px;background:#39B7EC"></div>
+              </div>
+              <div style="position:absolute;left:120px;top:50%;transform:translateY(-50%);background:#FFFFFF;border:1px solid #E3EBF4;border-radius:14px;padding:22px 26px;box-shadow:0 16px 40px rgba(22,50,79,.14)">
+                <div style="font-size:15px;font-weight:800;color:#16324F;margin-bottom:6px">Memory Converter</div>
+                <div style="font-size:14px;line-height:1.55;color:#4A5D73;font-weight:500">6630 Meade Street<br>Hollywood, FL 33024</div>
+                <a href="#" style="display:inline-block;margin-top:10px;font-size:13.5px;font-weight:800;color:#436DA5">Get directions →</a>
+              </div>
+              <div style="position:absolute;right:16px;bottom:12px;font-family:ui-monospace,monospace;font-size:11px;color:#8296AB;letter-spacing:.05em">google map embed — hollywood / south florida</div>
+            </div>
+
+            <!-- footer -->
+            <div style="background:#16324F;padding:64px 120px 28px 120px">
+              <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.12)">
+                <div>
+                  <div style="font-weight:800;font-size:19px;margin-bottom:12px"><span style="color:#FFFFFF">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+                  <p style="margin:0 0 18px 0;font-size:14px;line-height:1.65;color:rgba(255,255,255,.65);font-weight:500;max-width:300px">White-glove memory digitization, handled by hand in Hollywood, FL — never overseas.</p>
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="color:#39B7EC;font-size:13px;letter-spacing:2px">★★★★★</span><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.75)">5.0 on Google</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><span style="color:#39B7EC;font-size:13px;letter-spacing:2px">★★★★★</span><span style="font-size:13px;font-weight:700;color:rgba(255,255,255,.75)">5.0 on Yelp</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:11px">
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:4px">SERVICES</div>
+                  <a href="Convert VHS to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">VHS to Digital</a>
+                  <a href="Film to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">8mm &amp; Super 8 Film</a>
+                  <a href="Cassette to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Cassette to CD &amp; Digital</a>
+                  <a href="Photo Scanning and Restoration.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Photo Scanning &amp; Restoration</a>
+                  <a href="DVD to Digital.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">DVD to Digital</a>
+                  <a href="Living Memories.dc.html" style="font-size:14px;font-weight:600;color:#39B7EC" style-hover="color:#FFFFFF">Living Memories</a>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:11px">
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:4px">COMPANY</div>
+                  <a href="#" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">How It Works</a>
+                  <a href="#" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Reviews</a>
+                  <a href="Areas Served.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Areas Served</a>
+                  <a href="Compare.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Compare Us</a>
+                  <a href="Guides.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Guides</a>
+                  <a href="Reel Revival.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.78)" style-hover="color:#39B7EC">Reel Revival Blog</a>
+                </div>
+                <div>
+                  <div style="font-size:12px;font-weight:800;letter-spacing:.14em;color:rgba(255,255,255,.45);margin-bottom:15px">VISIT THE STUDIO</div>
+                  <div style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.78);font-weight:500;margin-bottom:14px">6630 Meade Street<br>Hollywood, FL 33024</div>
+                  <a href="tel:754-276-1601" style="display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:800;color:#39B7EC;margin-bottom:16px">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg>
+                    754-276-1601</a>
+                  <div style="display:flex;gap:14px;margin-top:4px">
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Facebook</a>
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Yelp</a>
+                    <a href="#" style="font-size:13px;font-weight:700;color:rgba(255,255,255,.6)" style-hover="color:#39B7EC">Instagram</a>
+                  </div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding-top:24px">
+                <div style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)">© 2026 Memory Converter · Hollywood, FL</div>
+                <div style="display:flex;gap:18px">
+                  <a href="#" style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)" style-hover="color:#39B7EC">Privacy</a>
+                  <a href="#" style="font-size:13px;font-weight:600;color:rgba(255,255,255,.45)" style-hover="color:#39B7EC">Terms</a>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    </div>
+    <sc-if value="{{ showMobile }}" hint-placeholder-val="{{ true }}">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:ui-monospace,monospace;font-size:12px;color:#8296AB;letter-spacing:.05em">mobile · 390</div>
+      <div data-screen-label="Homepage — Mobile" style="position:relative;width:390px;background:#FFFFFF;border:1px solid #D6DEE9;border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(22,50,79,.12)">
+
+
+            <!-- m header -->
+            <div style="display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 16px;background:#FFFFFF;border-bottom:1px solid #E3EBF4">
+              <div style="display:flex;align-items:center;gap:9px">
+                <img src="../assets/logo.jpg" alt="Memory Converter" style="width:34px;height:34px;mix-blend-mode:multiply">
+                <div style="font-weight:800;font-size:15px"><span style="color:#436DA5">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px">
+                <a href="tel:754-276-1601" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1.5px solid #39B7EC"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg></a>
+                <div style="display:flex;flex-direction:column;gap:4.5px;padding:6px 2px">
+                  <div style="width:20px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                  <div style="width:20px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                  <div style="width:14px;height:2.2px;border-radius:2px;background:#16324F"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- m hero -->
+            <div style="position:relative;background:#16324F;overflow:hidden;padding:44px 20px 52px 20px">
+              <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 70% at 50% 0%, rgba(57,183,236,.10), rgba(57,183,236,0) 55%)"></div>
+              <div style="position:relative">
+                <div style="font-size:11px;font-weight:800;letter-spacing:.15em;color:#39B7EC;margin-bottom:14px">PREMIUM MEMORY DIGITIZATION · HOLLYWOOD, FL</div>
+                <h1 style="margin:0 0 16px 0;font-size:33px;line-height:1.12;font-weight:800;color:#FFFFFF;letter-spacing:-.01em;text-wrap:balance">Your Memories, Preserved <span style="color:#39B7EC">Forever</span>.</h1>
+                <p style="margin:0 0 22px 0;font-size:15px;line-height:1.6;color:rgba(255,255,255,.82);font-weight:500">The white-glove digital media converter for your VHS tapes, film reels, photos, and audio — crisp digital you can watch, share, and keep for good.</p>
+                <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
+                  <a href="Contact.dc.html" style="display:block;text-align:center;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:15px 0;border-radius:12px">Get a Free Quote</a>
+                  <a href="#" style="display:block;text-align:center;border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:16px;padding:15px 0;border-radius:12px">See How It Works</a>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px">
+                  <div style="display:flex;align-items:center;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:rgba(255,255,255,.75)">Handled 100% in-house in Hollywood, FL</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:rgba(255,255,255,.75)">Insured, tracked shipping — both ways</span></div>
+                  <div style="display:flex;align-items:center;gap:8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:13px;font-weight:600;color:rgba(255,255,255,.75)">Free return of your originals</span></div>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:center;height:220px;border-radius:14px;background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C">
+                  <span style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.6)">photo — family watching home movies</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- m sticky bottom bar (shown floating at first-viewport fold) -->
+            <div style="position:absolute;top:706px;left:0;right:0;z-index:6;display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.96);border-top:1px solid #E3EBF4;padding:12px 16px;box-shadow:0 -10px 30px rgba(22,50,79,.14)">
+              <a href="Contact.dc.html" style="flex:1;display:block;text-align:center;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:15.5px;padding:14px 0;border-radius:12px">Get a Free Quote</a>
+              <a href="tel:754-276-1601" style="display:flex;align-items:center;justify-content:center;width:50px;height:50px;border-radius:12px;border:1.5px solid #39B7EC"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect><line x1="10.5" y1="18.2" x2="13.5" y2="18.2"></line></svg></a>
+            </div>
+
+            <!-- m trust -->
+            <div style="background:#F3F7FC;border-bottom:1px solid #E3EBF4;padding:20px 20px;display:flex;flex-wrap:wrap;gap:8px">
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">BBB Accredited</span></div>
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">Since 2020</span></div>
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">5★ Google &amp; Yelp</span></div>
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">4K/5K in-house</span></div>
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">Never overseas</span></div>
+              <div style="display:flex;align-items:center;gap:6px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:99px;padding:7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"></path></svg><span style="font-size:12px;font-weight:700;color:#34495E">3,000+ tapes · 40,000+ photos</span></div>
+            </div>
+
+            <!-- m services -->
+            <div style="background:#FFFFFF;padding:52px 20px">
+              <h2 style="margin:0 0 8px 0;font-size:26px;font-weight:800;color:#16324F;letter-spacing:-.01em">Every Format, Preserved by <span style="color:#39B7EC">Hand</span>.</h2>
+              <p style="margin:0 0 24px 0;font-size:14.5px;line-height:1.6;color:#4A5D73;font-weight:500">Cleaned, converted, and quality-checked one item at a time.</p>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="6" width="19" height="12" rx="2"></rect><circle cx="8" cy="12" r="2.3"></circle><circle cx="16" cy="12" r="2.3"></circle><line x1="10.4" y1="12" x2="13.6" y2="12"></line></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">VHS &amp; Video Tapes</div><div style="font-size:12.5px;color:#64748B;font-weight:600">From $18 per tape · 4K</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="7" r="1.6"></circle><circle cx="12" cy="17" r="1.6"></circle><circle cx="7" cy="12" r="1.6"></circle><circle cx="17" cy="12" r="1.6"></circle></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">8mm &amp; Super 8 Film</div><div style="font-size:12.5px;color:#64748B;font-weight:600">Frame-by-frame 5K scans</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="2"></rect><circle cx="8.5" cy="11.5" r="2"></circle><circle cx="15.5" cy="11.5" r="2"></circle><path d="M7 18.5l1.5-3h7l1.5 3"></path></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">Cassettes &amp; Audio</div><div style="font-size:12.5px;color:#64748B;font-weight:600">To CD, WAV &amp; MP3</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2"></rect><circle cx="9" cy="10" r="1.7"></circle><path d="M3 16.5l5-4 4 3 4-3.5 5 4.5"></path></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">Photos &amp; Slides</div><div style="font-size:12.5px;color:#64748B;font-weight:600">From $0.72 per photo or slide</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="13" height="10" rx="2"></rect><path d="M15.5 10.5l6-2.5v8l-6-2.5"></path><circle cx="9" cy="12" r="2.2"></circle></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">MiniDV &amp; Camcorder Tapes</div><div style="font-size:12.5px;color:#64748B;font-weight:600">Hi8 · Digital8 · MiniDV · HDV</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="display:flex;align-items:center;gap:14px;border:1px solid #E3EBF4;border-radius:14px;padding:14px 16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.12);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8.5" width="18" height="11" rx="2"></rect><rect x="2" y="4.5" width="20" height="4" rx="1.2"></rect><line x1="9.5" y1="13" x2="14.5" y2="13"></line></svg></div>
+                  <div style="flex:1"><div style="font-size:15.5px;font-weight:800;color:#16324F">White-Glove Archiving</div><div style="font-size:12.5px;color:#64748B;font-weight:600">Whole-archive projects</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="#" style="position:relative;display:flex;align-items:center;gap:14px;background:#16324F;border:1px solid #16324F;border-radius:14px;padding:16px;color:inherit">
+                  <div style="display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;background:rgba(57,183,236,.18);flex-shrink:0"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#39B7EC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="9.5" rx="2"></rect><path d="M3.5 10l1.6-4.6 16 1.8-.9 2.8"></path><line x1="9.2" y1="5.8" x2="8.2" y2="9.3"></line><line x1="14.4" y1="6.4" x2="13.4" y2="9.7"></line></svg></div>
+                  <div style="flex:1"><div style="display:flex;align-items:center;gap:8px"><span style="font-size:15.5px;font-weight:800;color:#FFFFFF">Living Memories</span><span style="background:#39B7EC;color:#16324F;font-size:9.5px;font-weight:800;letter-spacing:.07em;padding:3px 8px;border-radius:99px">EXCLUSIVE</span></div><div style="font-size:12.5px;color:rgba(255,255,255,.7);font-weight:600">Your life, as a documentary · From $1,800</div></div>
+                  <div style="color:#39B7EC;font-weight:800;font-size:18px">›</div>
+                </a>
+                <a href="Our Services.dc.html" style="text-align:center;font-size:14px;font-weight:800;color:#436DA5;padding:10px 0 0 0">See all services →</a>
+              </div>
+            </div>
+
+            <!-- m living memories -->
+            <div style="position:relative;background:#16324F;overflow:hidden;padding:52px 20px">
+              <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 80% at 50% 0%, rgba(57,183,236,.08), rgba(57,183,236,0) 55%)"></div>
+              <div style="position:relative">
+                <div style="font-size:11px;font-weight:800;letter-spacing:.15em;color:#39B7EC;margin-bottom:12px">ONLY FROM MEMORY CONVERTER</div>
+                <h2 style="margin:0 0 14px 0;font-size:25px;line-height:1.18;font-weight:800;color:#FFFFFF;letter-spacing:-.01em">Turn Your Memories Into a <span style="color:#39B7EC">Documentary</span> of Your Life.</h2>
+                <p style="margin:0 0 20px 0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.8);font-weight:500">Filmed in your own home, with your digitized photos and movies woven in. From $1,800.</p>
+                <div style="display:flex;align-items:center;justify-content:center;height:190px;border-radius:14px;margin-bottom:20px;background:repeating-linear-gradient(45deg, rgba(57,183,236,.08) 0px, rgba(57,183,236,.08) 10px, rgba(57,183,236,0) 10px, rgba(57,183,236,0) 20px),#1E3A5C">
+                  <span style="font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.6)">photo — in-home interview</span>
+                </div>
+                <a href="Living Memories.dc.html" style="display:block;text-align:center;border:1.5px solid #39B7EC;color:#39B7EC;font-weight:700;font-size:15.5px;padding:14px 0;border-radius:12px">Explore Living Memories</a>
+              </div>
+            </div>
+
+            <!-- m how it works -->
+            <div style="background:#F3F7FC;padding:52px 20px">
+              <h2 style="margin:0 0 24px 0;font-size:26px;font-weight:800;color:#16324F">How It <span style="color:#39B7EC">Works</span>.</h2>
+              <div style="display:flex;flex-direction:column;gap:0">
+                <div style="display:flex;gap:16px">
+                  <div style="display:flex;flex-direction:column;align-items:center"><div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid #39B7EC;background:#FFFFFF;font-size:13px;font-weight:800;color:#436DA5;flex-shrink:0">1</div><div style="width:1.5px;flex:1;background:#C9D9E8"></div></div>
+                  <div style="padding-bottom:24px"><div style="font-size:16px;font-weight:800;color:#16324F;margin:9px 0 5px 0">Get your free quote</div><div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">We send a prepaid, insured kit — or drop off in Hollywood, FL.</div></div>
+                </div>
+                <div style="display:flex;gap:16px">
+                  <div style="display:flex;flex-direction:column;align-items:center"><div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid #39B7EC;background:#FFFFFF;font-size:13px;font-weight:800;color:#436DA5;flex-shrink:0">2</div><div style="width:1.5px;flex:1;background:#C9D9E8"></div></div>
+                  <div style="padding-bottom:24px"><div style="font-size:16px;font-weight:800;color:#16324F;margin:9px 0 5px 0">Digitized by hand</div><div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">Cleaned, repaired if needed, converted in-house in 4K/5K.</div></div>
+                </div>
+                <div style="display:flex;gap:16px">
+                  <div style="display:flex;flex-direction:column;align-items:center"><div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid #39B7EC;background:#FFFFFF;font-size:13px;font-weight:800;color:#436DA5;flex-shrink:0">3</div><div style="width:1.5px;flex:1;background:#C9D9E8"></div></div>
+                  <div style="padding-bottom:24px"><div style="font-size:16px;font-weight:800;color:#16324F;margin:9px 0 5px 0">Review online</div><div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">Approve everything from a private online gallery.</div></div>
+                </div>
+                <div style="display:flex;gap:16px">
+                  <div style="display:flex;flex-direction:column;align-items:center"><div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:1.5px solid #39B7EC;background:#FFFFFF;font-size:13px;font-weight:800;color:#436DA5;flex-shrink:0">4</div></div>
+                  <div><div style="font-size:16px;font-weight:800;color:#16324F;margin:9px 0 5px 0">Everything returned</div><div style="font-size:13.5px;line-height:1.6;color:#4A5D73;font-weight:500">Files by cloud, USB, or DVD — originals returned safely.</div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- m reviews -->
+            <div style="background:#FFFFFF;padding:52px 20px">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+                <h2 style="margin:0;font-size:26px;font-weight:800;color:#16324F">A Wall of <span style="color:#39B7EC">Stories</span>.</h2>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:20px"><span style="color:#39B7EC;font-size:14px;letter-spacing:2px">★★★★★</span><span style="font-size:13px;font-weight:800;color:#16324F">5.0 on Google &amp; Yelp</span></div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:14px;padding:20px">
+                  <div style="color:#39B7EC;font-size:12px;letter-spacing:2px;margin-bottom:10px">★★★★★</div>
+                  <p style="margin:0 0 14px 0;font-size:14px;line-height:1.6;color:#34495E;font-weight:500">“My dad's Super 8 reels from 1968 look better than I remembered them. I cried watching the very first file.”</p>
+                  <div style="font-size:13px;font-weight:800;color:#16324F">Marisol G. <span style="color:#64748B;font-weight:600">· Coral Gables</span></div>
+                </div>
+                <div style="background:#F3F7FC;border:1px solid #E3EBF4;border-radius:14px;padding:20px">
+                  <div style="color:#39B7EC;font-size:12px;letter-spacing:2px;margin-bottom:10px">★★★★★</div>
+                  <p style="margin:0 0 14px 0;font-size:14px;line-height:1.6;color:#34495E;font-weight:500">“Forty VHS tapes, every one returned in perfect condition. Sharing with my kids was effortless.”</p>
+                  <div style="font-size:13px;font-weight:800;color:#16324F">David R. <span style="color:#64748B;font-weight:600">· Boca Raton</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- m CTA band -->
+            <div style="position:relative;background:#16324F;overflow:hidden;padding:52px 20px;text-align:center">
+              <div style="position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(140% 90% at 50% 0%, rgba(57,183,236,.09), rgba(57,183,236,0) 60%)"></div>
+              <div style="position:relative">
+                <h2 style="margin:0 0 10px 0;font-size:27px;font-weight:800;color:#FFFFFF">Don't Let Your Memories <span style="color:#39B7EC">Fade</span>.</h2>
+                <p style="margin:0 0 22px 0;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78);font-weight:500">Digitizing them takes one free quote.</p>
+                <a href="Contact.dc.html" style="display:block;text-align:center;background:#436DA5;color:#FFFFFF;font-weight:700;font-size:16px;padding:15px 0;border-radius:12px;margin-bottom:10px">Get a Free Quote</a>
+                <a href="tel:754-276-1601" style="display:block;text-align:center;border:1.5px solid rgba(255,255,255,.25);color:#FFFFFF;font-weight:700;font-size:15px;padding:14px 0;border-radius:12px">Call 754-276-1601</a>
+              </div>
+            </div>
+
+            <!-- m map + footer -->
+            <div style="position:relative;height:190px;background-image:linear-gradient(rgba(67,109,165,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(67,109,165,.08) 1px, transparent 1px);background-size:36px 36px;background-color:#E8EFF6">
+              <div style="position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#39B7EC;box-shadow:0 8px 20px rgba(57,183,236,.45)"><div style="width:9px;height:9px;border-radius:50%;background:#FFFFFF"></div></div>
+              <div style="position:absolute;left:16px;right:16px;bottom:14px;background:#FFFFFF;border:1px solid #E3EBF4;border-radius:12px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:12.5px;line-height:1.5;color:#34495E;font-weight:600">6630 Meade Street, Hollywood, FL 33024</div>
+                <a href="#" style="font-size:12.5px;font-weight:800;color:#436DA5;flex-shrink:0;margin-left:12px">Directions →</a>
+              </div>
+            </div>
+            <div style="background:#16324F;padding:36px 20px 90px 20px">
+              <div style="font-weight:800;font-size:16px;margin-bottom:10px"><span style="color:#FFFFFF">Memory</span> <span style="color:#39B7EC">Converter</span></div>
+              <div style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.65);font-weight:500;margin-bottom:14px">6630 Meade Street, Hollywood, FL 33024<br>754-276-1601</div>
+              <div style="display:flex;gap:12px;margin-bottom:18px">
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Facebook</a>
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Yelp</a>
+                <a href="#" style="font-size:12.5px;font-weight:700;color:rgba(255,255,255,.6)">Instagram</a>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="color:#39B7EC;font-size:12px;letter-spacing:2px">★★★★★</span><span style="font-size:12px;font-weight:700;color:rgba(255,255,255,.7)">5.0 Google &amp; Yelp</span></div>
+              <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,.4);margin-top:16px">© 2026 Memory Converter · Hollywood, FL</div>
+            </div>
+          
+      </div>
+    </div>
+    </sc-if>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;filmGrain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Style&quot;},&quot;showMobile&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Canvas&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      grain: this.props.filmGrain ?? true,
+      showMobile: this.props.showMobile ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

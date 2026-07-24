@@ -1,0 +1,35 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"64px"}}},"layout":{"inherit":true}} -->
+<main class="wp-block-group" style="padding-bottom:64px"><!-- wp:query-title {"type":"archive","align":"wide","style":{"spacing":{"margin":{"bottom":"48px"}}}} /-->
+
+<!-- wp:query {"queryId":23,"query":{"perPage":9,"pages":0,"offset":0,"postType":"listing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"inherit":true}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"align":"wide"} -->
+<!-- wp:post-featured-image {"isLink":true,"height":"306px","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}}} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"17px","bottom":"18px"}}}} -->
+<div class="wp-block-group" style="padding-top:17px;padding-bottom:18px"><!-- wp:realome-theme-extension/acf-field {"prefix":"$","acfField":"price","textColor":"tertiary","fontSize":"small","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} /-->
+
+<!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"6px","bottom":"12px"}}},"fontSize":"medium"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"24px","padding":{"bottom":"5px"}}},"textColor":"muted","className":"mt-0","layout":{"type":"flex"}} -->
+<div class="wp-block-group mt-0 has-muted-color has-text-color" style="padding-bottom:5px"><!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e bed \u003c/span\u003e","suffix":" Beds","acfField":"bedrooms","fontSize":"small"} /-->
+
+<!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e shower \u003c/span\u003e","suffix":" Baths","acfField":"bathrooms","fontSize":"small"} /-->
+
+<!-- wp:realome-theme-extension/acf-field {"prefix":"\u003cspan class=\u0022material-icons-outlined\u0022\u003e square_foot \u003c/span\u003e","suffix":" SQ-FT","acfField":"square_feet","fontSize":"small"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal","flexWrap":"wrap"}} -->
+<!-- wp:query-pagination-previous {"fontSize":"normal"} /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next {"fontSize":"normal"} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
